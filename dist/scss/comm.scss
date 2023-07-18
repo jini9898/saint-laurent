@@ -111,11 +111,12 @@
   }
   .canvas {
     position: relative;
+    top: -2px;
     left: 90px;
     display: flex;
     justify-content: space-between;
-    width: 195px;
-    height: 45px;
+    width: 205px;
+    height: 50px;
   }
   .frame {
     position: relative;
@@ -157,10 +158,13 @@
     background: #000;
   }
   .color-name {
-    padding: 40px 0;
+    padding: 32px 0;
     font-family: "Roboto";
     font-weight: 400;
     font-size: 16px;
     text-align: center;
+  }
+  .size-wrap {
+    display: flex;
   }
 }
