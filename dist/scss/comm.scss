@@ -28,7 +28,11 @@
 }
 
 #header {
-  border-bottom: 1px solid #000;
+  position: fixed;
+  background: #000;
+  top: 0;
+  left: 0;
+  right: 0;
 
   #logo img {
     height: 21px;
@@ -68,18 +72,25 @@
   }
 }
 #main {
-  .main-product{
+  .main-product {
     height: 500px;
-    background: url(../../images/contents/상세페이지\ 메인.jpg) 0 0 /no-repeat;
+    background: url(../../images/contents/상세페이지\ 메인.jpg) no-repeat 0 0;
     background-size: cover;
-    margin-bottom: 40px;
+    margin: 70px 0 40px;
   }
   .main-text {
+    font-family: "Libre Baskerville";
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0 20px 40px;
     text-align: center;
+    line-height: normal;
   }
-
+  .won {
+    display: block;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 700;
+    margin: auto;
+  }
 }
-body {
-  background: url();
-}
-

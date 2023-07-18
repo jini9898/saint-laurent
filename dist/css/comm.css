@@ -263,36 +263,6 @@ body .wrap {
   opacity: 0.7;
 }
 
-@font-face {
-  font-family: "Roboto";
-  font-weight: 300;
-  src: url(../fonts/Roboto-Light.woff) format("woff");
-}
-@font-face {
-  font-family: "Roboto";
-  font-weight: 400;
-  src: url(../fonts/Roboto-Regular.woff) format("woff");
-}
-@font-face {
-  font-family: "Roboto";
-  font-weight: 500;
-  src: url(../fonts/Roboto-Medium.woff) format("woff");
-}
-@font-face {
-  font-family: "Roboto";
-  font-weight: 700;
-  src: url(../fonts/Roboto-Bold.woff) format("woff");
-}
-@font-face {
-  font-family: "Libre Baskerville", serif;
-  font-weight: 400;
-  src: url(../fonts/LibreBaskerville-Regular.woff) format("woff");
-}
-@font-face {
-  font-family: "Libre Baskerville", serif;
-  font-weight: 700;
-  src: url(../fonts/LibreBaskerville-Bold.woff) format("woff");
-}
 /* reset */
 body,
 div,
@@ -570,7 +540,11 @@ body .wrap {
 }
 
 #header {
-  border-bottom: 1px solid #000;
+  position: fixed;
+  background: #000;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 #header #logo img {
   height: 21px;
@@ -606,14 +580,22 @@ body .wrap {
 
 #main .main-product {
   height: 500px;
-  background: url(../../images/contents/상세페이지\ 메인.jpg) 0 0/no-repeat;
+  background: url(../../images/contents/상세페이지\ 메인.jpg) no-repeat 0 0;
   background-size: cover;
-  margin-bottom: 40px;
+  margin: 70px 0 40px;
 }
 #main .main-text {
+  font-family: "Libre Baskerville";
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0 20px 40px;
   text-align: center;
+  line-height: normal;
 }
-
-body {
-  background: url();
+#main .won {
+  display: block;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 700;
+  margin: auto;
 }/*# sourceMappingURL=comm.css.map */
