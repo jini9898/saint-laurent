@@ -71,14 +71,15 @@
     }
   }
 }
+
 #main {
-  .main-product {
+  .prod {
     height: 500px;
     background: url(../../images/contents/상세페이지\ 메인.jpg) no-repeat 0 0;
     background-size: cover;
     margin: 70px 0 40px;
   }
-  .main-text {
+  .prod-title {
     font-family: "Libre Baskerville";
     font-size: 16px;
     font-weight: 700;
@@ -86,11 +87,80 @@
     text-align: center;
     line-height: normal;
   }
-  .won {
-    display: block;
+  .price {
+    display: flex;
+    // flex-basis: 100%;
+    justify-content: center;
+    align-items: center;
     font-family: "Roboto";
     font-size: 16px;
     font-weight: 700;
-    margin: auto;
+    margin: auto 0;
+    padding: 0 20px 40px;
+  }
+
+  .price::before,
+  .price::after {
+    content: "";
+    flex-grow: 1;
+    background: rgba(0, 0, 0, 0.35);
+    height: 1px;
+    font-size: 0px;
+    line-height: 0px;
+    margin: 0px 16px;
+  }
+  .canvas {
+    position: relative;
+    left: 90px;
+    display: flex;
+    justify-content: space-between;
+    width: 195px;
+    height: 45px;
+  }
+  .frame {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    background: white;
+    border: 1px solid #000;
+  }
+  .black {
+    width: 25px;
+    height: 25px;
+    background: #000;
+  }
+  .white {
+    width: 25px;
+    height: 25px;
+    background: #faf7ed;
+  }
+  .storm {
+    width: 25px;
+    height: 25px;
+    background: #4d4d4d;
+  }
+  .baige {
+    width: 25px;
+    height: 25px;
+    background: #d19e6b;
+  }
+  .cb1::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 1.5px;
+    background: #000;
+  }
+  .color-name {
+    padding: 40px 0;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
   }
 }
