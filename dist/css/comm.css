@@ -263,14 +263,6 @@ legend {
   content: "";
 }
 
-body {
-  background: url("../../images/m-main.jpg") 0 0 no-repeat;
-  background-size: 100% auto;
-}
-body .wrap {
-  opacity: 0.7;
-}
-
 /* reset */
 body,
 div,
@@ -535,14 +527,6 @@ legend {
   content: "";
 }
 
-body {
-  background: url("../../images/m-main.jpg") 0 0 no-repeat;
-  background-size: 100% auto;
-}
-body .wrap {
-  opacity: 0.7;
-}
-
 .main {
   height: 100px;
 }
@@ -595,8 +579,7 @@ body .wrap {
 }
 
 #main .prod {
-  height: 500px;
-  background: url(../../images/contents/상세페이지\ 메인.jpg) no-repeat 0 0;
+  background: no-repeat 0 0;
   background-size: cover;
   margin: 70px 0 40px;
 }
@@ -629,11 +612,9 @@ body .wrap {
   margin: 0px 16px;
 }
 #main .canvas {
-  position: relative;
-  top: -2px;
-  left: 90px;
   display: flex;
   justify-content: space-between;
+  margin: auto;
   width: 205px;
   height: 50px;
 }

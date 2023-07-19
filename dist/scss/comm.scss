@@ -74,8 +74,8 @@
 
 #main {
   .prod {
-    height: 500px;
-    background: url(../../images/contents/상세페이지\ 메인.jpg) no-repeat 0 0;
+    // height: 500px;
+    background: no-repeat 0 0;
     background-size: cover;
     margin: 70px 0 40px;
   }
@@ -110,11 +110,9 @@
     margin: 0px 16px;
   }
   .canvas {
-    position: relative;
-    top: -2px;
-    left: 90px;
     display: flex;
     justify-content: space-between;
+    margin: auto;
     width: 205px;
     height: 50px;
   }
