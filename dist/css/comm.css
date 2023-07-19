@@ -122,7 +122,7 @@ body {
   font-size: 14px;
   line-height: 1.5;
   font-family: "Noto Sans KR", "Malgun Gothic", "맑은 고딕", sans-serif;
-  color: #111;
+  color: #000;
 }
 
 /* desktop */
@@ -261,6 +261,14 @@ legend {
   font-size: 0;
   clear: both;
   content: "";
+}
+
+body {
+  background: url("../../images/m-main.jpg") 0 -25px no-repeat;
+  background-size: 100% auto;
+}
+body .wrap {
+  opacity: 0.7;
 }
 
 /* reset */
@@ -386,7 +394,7 @@ body {
   font-size: 14px;
   line-height: 1.5;
   font-family: "Noto Sans KR", "Malgun Gothic", "맑은 고딕", sans-serif;
-  color: #111;
+  color: #000;
 }
 
 /* desktop */
@@ -527,6 +535,14 @@ legend {
   content: "";
 }
 
+body {
+  background: url("../../images/m-main.jpg") 0 -25px no-repeat;
+  background-size: 100% auto;
+}
+body .wrap {
+  opacity: 0.7;
+}
+
 .main {
   height: 100px;
 }
@@ -537,6 +553,10 @@ legend {
 
 .container {
   padding: 0 4%;
+}
+
+.wrap {
+  padding-top: 70px;
 }
 
 #header {
@@ -578,20 +598,24 @@ legend {
   padding: 5px;
 }
 
-#main .prod {
+.productcard .productcard_thumnail {
   background: no-repeat 0 0;
   background-size: cover;
-  margin: 70px 0 40px;
+  margin-bottom: 40px;
 }
-#main .prod-title {
+.productcard .productcard_thumnail img {
+  width: 100%;
+}
+.productcard .productcard_tit {
   font-family: "Libre Baskerville";
   font-size: 16px;
   font-weight: 700;
-  padding: 0 20px 40px;
+  padding: 0 20px 39px;
   text-align: center;
   line-height: normal;
 }
-#main .price {
+
+.introduce .price {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -599,10 +623,9 @@ legend {
   font-size: 16px;
   font-weight: 700;
   margin: auto 0;
-  padding: 0 20px 40px;
+  padding: 0 20px 36px;
 }
-#main .price::before,
-#main .price::after {
+.introduce .price::before, .introduce .price::after {
   content: "";
   flex-grow: 1;
   background: rgba(0, 0, 0, 0.35);
@@ -611,14 +634,14 @@ legend {
   line-height: 0px;
   margin: 0px 16px;
 }
-#main .canvas {
+.introduce .frame-wrap {
   display: flex;
   justify-content: space-between;
   margin: auto;
   width: 205px;
   height: 50px;
 }
-#main .frame {
+.introduce .frame-wrap .frame {
   position: relative;
   display: flex;
   align-items: center;
@@ -628,27 +651,27 @@ legend {
   background: white;
   border: 1px solid #000;
 }
-#main .black {
+.introduce .frame-wrap .black {
   width: 25px;
   height: 25px;
   background: #000;
 }
-#main .white {
+.introduce .frame-wrap .white {
   width: 25px;
   height: 25px;
   background: #faf7ed;
 }
-#main .storm {
+.introduce .frame-wrap .storm {
   width: 25px;
   height: 25px;
   background: #4d4d4d;
 }
-#main .baige {
+.introduce .frame-wrap .baige {
   width: 25px;
   height: 25px;
   background: #d19e6b;
 }
-#main .cb1::after {
+.introduce .frame-wrap .cb1::after {
   content: "";
   position: absolute;
   bottom: -10px;
@@ -657,13 +680,63 @@ legend {
   height: 1.5px;
   background: #000;
 }
-#main .color-name {
-  padding: 32px 0;
+.introduce .color-name {
+  padding: 32px 0 36px;
   font-family: "Roboto";
   font-weight: 400;
   font-size: 16px;
   text-align: center;
 }
-#main .size-wrap {
+.introduce .size {
+  width: 205px;
+  margin: auto;
+}
+.introduce .size .size-frame {
+  position: relative;
   display: flex;
+  justify-content: space-around;
+  height: 30px;
+  margin-bottom: 36px;
+}
+.introduce .size .size-frame::after {
+  content: "     ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 205px;
+  background: #000;
+  border: 2px solid #999;
+}
+.introduce .size .size-frame .s-size {
+  display: inline-block;
+  font-family: "Libre Baskerville";
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #999;
+}
+.introduce .size .size-frame .m-size {
+  display: inline-block;
+  font-family: "Libre Baskerville";
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+}
+.introduce .size .size-frame .on::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -3px;
+  z-index: 2;
+  width: 105px;
+  background: #000;
+  border: 2px solid #000;
+}
+.introduce .size .size-detail {
+  display: flex;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.5;
 }/*# sourceMappingURL=comm.css.map */
