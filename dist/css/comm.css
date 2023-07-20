@@ -689,7 +689,7 @@ body .wrap {
 }
 .introduce .size {
   width: 205px;
-  margin: auto;
+  margin: 0 auto 34px;
 }
 .introduce .size .size-frame {
   position: relative;
@@ -739,4 +739,18 @@ body .wrap {
   font-size: 14px;
   text-align: center;
   line-height: 1.5;
+}
+.introduce .cart-button {
+  display: block;
+  background: #000;
+  color: white;
+  border: none;
+  padding: auto;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 0 auto 100px;
+  cursor: pointer;
+  width: 205px;
+  height: 30px;
 }/*# sourceMappingURL=comm.css.map */
