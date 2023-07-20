@@ -1,29 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: "Poppins";
-  font-weight: 300;
-  src: url(../font/Poppins-Light.woff) format("woff");
-}
-@font-face {
-  font-family: "Poppins";
-  font-weight: 400;
-  src: url(../fonts/Poppins-Regular.woff) format("woff");
-}
-@font-face {
-  font-family: "Poppins";
-  font-weight: 500;
-  src: url(../fonts/Poppins-Medium.woff) format("woff");
-}
-@font-face {
-  font-family: "Poppins";
-  font-weight: 600;
-  src: url(../fonts/Poppins-SemiBold.woff) format("woff");
-}
-@font-face {
-  font-family: "Poppins";
-  font-weight: 700;
-  src: url(../fonts/Poppins-Bold.woff) format("woff");
-}
 /* reset */
 body,
 div,
@@ -112,20 +87,28 @@ body {
 /* 뷰표트 변환시 폰트크기 자동확대 방지 */
 input[type=text], input[type=password], input[type=submit], input[type=search] {
   -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border-radius: 0;
 }
 input:checked[type=checkbox] {
   background-color: #666;
   -webkit-appearance: checkbox;
+     -moz-appearance: checkbox;
+          appearance: checkbox;
 }
 
 button {
   -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button;
   border-radius: 0;
 }
 
 input[type=button], input[type=submit], input[type=reset], input[type=file] {
   -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button;
   border-radius: 0;
 }
 input[type=search]::-webkit-search-cancel-button {
@@ -139,7 +122,7 @@ body {
   font-size: 14px;
   line-height: 1.5;
   font-family: "Noto Sans KR", "Malgun Gothic", "맑은 고딕", sans-serif;
-  color: #111;
+  color: #000;
 }
 
 /* desktop */
@@ -284,13 +267,14 @@ legend {
   height: 100px;
 }
 
-.contents {
-  height: 300px;
-}
-
 .container {
   padding: 0 30px;
   position: relative;
+}
+
+.wrap {
+  padding-top: 70px;
+  padding-bottom: 300px;
 }
 
 #header {
