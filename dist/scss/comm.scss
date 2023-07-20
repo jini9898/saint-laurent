@@ -227,19 +227,69 @@
       line-height: 1.5;
     }
   }
-  
-  .cart-button {
-    display: block ;
-    background: #000;
-    color: white;
-    border: none;
-    padding: auto;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    margin: 0 auto 100px;
-    cursor: pointer;
-    width: 205px;
-    height: 30px;
+
+  .cart {
+    .cart-button {
+      display: block;
+      background: #000;
+      color: white;
+      border: none;
+      padding: auto;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      margin: 0 auto 40px;
+      cursor: pointer;
+      width: 205px;
+      height: 30px;
+    }
+  }
+  .sub__tabmenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    .details-tabs {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      position: relative;
+      font-size: 14px;
+      cursor: pointer;
+      width: 33.333%;
+      height: 50px;
+      margin: auto;
+      text-align: center;
+      font-weight: 400;
+      font-family: "Libre Baskerville";
+      // letter-spacing: 2px;
+      &::after {
+        position: absolute;
+        content: "";
+        bottom: -10px;
+        left: 0px;
+        right: 0;
+        height: 4px;
+        background: #999;
+      }
+    }
+    .on {
+      position: relative;
+      font-family: "Libre Baskerville";
+      font-size: 16px;
+      font-weight: 700;
+      &::after {
+        position: absolute;
+        content: "";
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: #000;
+      }
+    }
+  }
+
+  .view_deatails_info {
+    font-family: "Roboto";
   }
 }
