@@ -268,7 +268,8 @@ legend {
 }
 
 .container {
-  padding: 0 4%;
+  padding: 0 30px;
+  position: relative;
 }
 
 .wrap {
@@ -284,9 +285,10 @@ legend {
   right: 0;
 }
 #header #logo img {
-  height: 21px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 #header .inner {
   display: flex;
@@ -296,7 +298,7 @@ legend {
 }
 #header .btn-g {
   height: 40px;
-  width: 70px;
+  margin: -10%;
 }
 #header .btn-g::before {
   font-size: 20px;
@@ -307,300 +309,130 @@ legend {
   font-family: "Font Awesome 6 free";
   font-weight: 900;
   padding: 5px;
+  color: #fff;
 }
 #header .lst-util2 .btn-ham::before {
   content: "\f007";
+  margin: -10%;
   font-family: "Font Awesome 6 free";
   font-weight: 500;
+  color: #fff;
+}
+
+#main {
+  padding-top: 70px;
+}
+#main img {
+  width: 100%;
+}
+
+.sec-introduce .txt-shopping__tit {
+  display: block;
+  margin: 50px 30px 0px;
+  color: #000;
+  /* Libre/h2-bold-24 */
+  font-family: Libre Baskerville;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 28.8px */
+}
+.sec-introduce .txt-shopping__desc {
+  display: block;
+  margin: 20px 30px 50px;
+  color: #000;
+  /* roboto-r/body3-14 */
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 16.8px */
+}
+
+.container p {
+  color: var(--black, #000);
+  /* roboto-r/caption-12 */
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 14.4px */
+}
+
+#footer {
+  position: relative;
+}
+#footer .lst-foot > li {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid #000;
+}
+#footer .lst-sns {
+  display: flex;
+}
+#footer .lst-sns a {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+#footer .footerlogo {
+  padding: 20px 20px;
+}
+#footer .footerlogo img {
+  display: block;
+  margin: 0 auto;
+  width: 190px;
+  height: 20px;
+  flex-shrink: 0;
+}
+#footer .material-icons-outlined {
+  position: absolute;
+  display: inline-block;
+  font-size: 0.9rem;
+}
+#footer .iconbox {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 10px;
+}
+#footer .fp {
+  position: relative;
   padding: 5px;
 }
-
-.productcard .productcard_thumnail {
-  background: no-repeat 0 0;
-  background-size: cover;
+#footer .footerbox {
+  position: relative;
+  padding: 5px;
+}
+#footer .ocean {
+  overflow: hidden;
+  width: 100%;
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
   margin-bottom: 40px;
-}
-.productcard .productcard_thumnail img {
-  width: 100%;
-}
-.productcard .productcard_tit {
-  font-family: "Libre Baskerville";
-  font-size: 16px;
-  font-weight: 700;
-  padding: 0 20px 39px;
-  text-align: center;
-  line-height: normal;
-}
-
-.introduce .price {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Roboto";
-  font-size: 16px;
-  font-weight: 700;
-  margin: auto 0;
-  padding: 0 20px 36px;
-}
-.introduce .price::before {
-  content: "";
-  flex-grow: 1;
-  background: rgba(0, 0, 0, 0.35);
-  height: 1px;
-  font-size: 0px;
-  line-height: 0px;
-  margin: 0 10px 0 0;
-}
-.introduce .price::after {
-  content: "";
-  flex-grow: 1;
-  background: rgba(0, 0, 0, 0.35);
-  height: 1px;
-  font-size: 0px;
-  line-height: 0px;
-  margin: 0 0 0 10px;
-}
-.introduce .frame-wrap {
-  display: flex;
-  justify-content: space-between;
-  margin: auto;
-  width: 205px;
+  padding: 0 0;
   height: 50px;
-}
-.introduce .frame-wrap .frame {
-  position: relative;
+  top: 50%;
+  margin-top: 80px;
+  transform: translateY(-50%);
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 35px;
-  height: 35px;
-  background: white;
-  border: 1px solid #000;
 }
-.introduce .frame-wrap .black {
-  width: 25px;
-  height: 25px;
-  background: #000;
-}
-.introduce .frame-wrap .white {
-  width: 25px;
-  height: 25px;
-  background: #faf7ed;
-}
-.introduce .frame-wrap .storm {
-  width: 25px;
-  height: 25px;
-  background: #4d4d4d;
-}
-.introduce .frame-wrap .baige {
-  width: 25px;
-  height: 25px;
-  background: #d19e6b;
-}
-.introduce .frame-wrap .cb1::after {
-  content: "";
+#footer .wave {
+  background: url(../../images/logo\ balck.png) repeat-x;
   position: absolute;
-  bottom: -10px;
-  left: 0;
-  width: 100%;
-  height: 1.5px;
-  background: #000;
+  z-index: 100;
+  top: 13px;
+  width: 6400px;
+  height: 198px;
+  animation: wave 20s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
 }
-.introduce .color-name {
-  padding: 32px 0 36px;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 16px;
-  text-align: center;
-}
-.introduce .size {
-  width: 205px;
-  margin: 0 auto 34px;
-}
-.introduce .size .size-frame {
-  position: relative;
-  display: flex;
-  justify-content: space-around;
-  height: 30px;
-  margin-bottom: 36px;
-}
-.introduce .size .size-frame::after {
-  content: "     ";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 205px;
-  background: #000;
-  border: 2px solid #999;
-}
-.introduce .size .size-frame .s-size {
-  display: inline-block;
-  font-family: "Libre Baskerville";
-  font-weight: 400;
-  font-size: 16px;
-  text-align: center;
-  color: #999;
-}
-.introduce .size .size-frame .m-size {
-  display: inline-block;
-  font-family: "Libre Baskerville";
-  font-weight: 700;
-  font-size: 16px;
-  text-align: center;
-}
-.introduce .size .size-frame .on::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: -3px;
-  z-index: 2;
-  width: 105px;
-  background: #000;
-  border: 2px solid #000;
-}
-.introduce .size .size-detail {
-  display: flex;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 14px;
-  text-align: center;
-  line-height: 1.5;
-}
-.introduce .cart .cart-button {
-  display: block;
-  background: #000;
-  color: white;
-  border: none;
-  padding: auto;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  margin: 0 auto 40px;
-  cursor: pointer;
-  width: 205px;
-  height: 30px;
-}
-.introduce .sub__tabmenu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-}
-.introduce .sub__tabmenu .details-tabs {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  position: relative;
-  font-size: 14px;
-  cursor: pointer;
-  width: 33.333%;
-  height: 50px;
-  margin: auto;
-  text-align: center;
-  font-weight: 400;
-  font-family: "Libre Baskerville";
-}
-.introduce .sub__tabmenu .details-tabs::after {
-  position: absolute;
-  content: "";
-  bottom: -10px;
-  left: 0px;
-  right: 0;
-  height: 4px;
-  background: #999;
-}
-.introduce .sub__tabmenu .on {
-  position: relative;
-  font-family: "Libre Baskerville";
-  font-size: 16px;
-  font-weight: 700;
-}
-.introduce .sub__tabmenu .on::after {
-  position: absolute;
-  content: "";
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: #000;
-}
-.introduce .view_deatails_info {
-  display: flex;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 14px;
-  text-align: center;
-  margin: 30px 20px 0;
-  line-height: 120%;
-}
-.introduce .details_wrap {
-  margin-top: 40px;
-}
-.introduce .details_wrap img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  margin-bottom: 10px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.introduce .details_wrap li:last-child img {
-  margin: 0;
-}
-.introduce .sub2 .fabric_care {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Libre Baskerville";
-  font-size: 18px;
-  font-weight: 700;
-  margin: auto 0px;
-  padding: 36px 20px 0;
-}
-.introduce .sub2 .fabric_care::before {
-  content: "";
-  flex-grow: 1;
-  background: rgba(0, 0, 0, 0.35);
-  height: 1px;
-  font-size: 0px;
-  line-height: 0px;
-  margin: 0 10px 0 0;
-}
-.introduce .sub2 .fabric_care::after {
-  content: "";
-  flex-grow: 1;
-  background: rgba(0, 0, 0, 0.35);
-  height: 1px;
-  font-size: 0px;
-  line-height: 0px;
-  margin: 0 0 0 10px;
-}
-.introduce .sub2 .sub2_detail {
-  margin-top: 30px;
-  padding: 0 20px;
-}
-.introduce .sub2 .sub2_detail .sub2_detail_txt {
-  font-family: "Roboto";
-  font-size: 14px;
-  font-weight: 400;
-  text-align: center;
-}
-.introduce .swiper {
-  width: 100%;
-  height: 100%;
-  padding-left: 20px;
-}
-.introduce .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.introduce .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
 }/*# sourceMappingURL=comm.css.map */
