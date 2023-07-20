@@ -97,18 +97,18 @@ input {
   &[type="password"],
   &[type="submit"],
   &[type="search"] {
-    -webkit-appearance: none;
+    appearance: none;
     border-radius: 0;
   }
 
   &:checked[type="checkbox"] {
     background-color: #666;
-    -webkit-appearance: checkbox;
+    appearance: checkbox;
   }
 }
 
 button {
-  -webkit-appearance: button;
+  appearance: button;
   border-radius: 0;
 }
 
@@ -117,7 +117,7 @@ input {
   &[type="submit"],
   &[type="reset"],
   &[type="file"] {
-    -webkit-appearance: button;
+    appearance: button;
     border-radius: 0;
   }
 
@@ -134,7 +134,7 @@ body {
   font-size: 14px;
   line-height: 1.5;
   font-family: "Noto Sans KR", "Malgun Gothic", "맑은 고딕", sans-serif;
-  color: #111;
+  color: #000;
 }
 
 /* desktop */
@@ -288,3 +288,11 @@ legend {
     content: "";
   }
 }
+
+// body {
+//   background: url("../../images/m-main.jpg") 0 -25px no-repeat;
+//   background-size: 100% auto;
+//   .wrap {
+//     opacity: 0.7;
+//   }
+// }
