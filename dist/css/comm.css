@@ -541,6 +541,7 @@ legend {
 
 .wrap {
   padding-top: 70px;
+  padding-bottom: 300px;
 }
 
 #header {
@@ -609,14 +610,23 @@ legend {
   margin: auto 0;
   padding: 0 20px 36px;
 }
-.introduce .price::before, .introduce .price::after {
+.introduce .price::before {
   content: "";
   flex-grow: 1;
   background: rgba(0, 0, 0, 0.35);
   height: 1px;
   font-size: 0px;
   line-height: 0px;
-  margin: 0px 16px;
+  margin: 0 10px 0 0;
+}
+.introduce .price::after {
+  content: "";
+  flex-grow: 1;
+  background: rgba(0, 0, 0, 0.35);
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0 0 0 10px;
 }
 .introduce .frame-wrap {
   display: flex;
@@ -782,6 +792,79 @@ legend {
   background: #000;
 }
 .introduce .view_deatails_info {
+  display: flex;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  margin: 30px 20px 0;
+  line-height: 120%;
+}
+.introduce .details_wrap {
+  margin-top: 40px;
+}
+.introduce .details_wrap img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.introduce .details_wrap li:last-child img {
+  margin: 0;
+}
+.introduce .sub2 .fabric_care {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Libre Baskerville";
+  font-size: 18px;
+  font-weight: 700;
+  margin: auto 0px;
+  padding: 36px 20px 0;
+}
+.introduce .sub2 .fabric_care::before {
+  content: "";
+  flex-grow: 1;
+  background: rgba(0, 0, 0, 0.35);
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0 10px 0 0;
+}
+.introduce .sub2 .fabric_care::after {
+  content: "";
+  flex-grow: 1;
+  background: rgba(0, 0, 0, 0.35);
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0 0 0 10px;
+}
+.introduce .sub2 .sub2_detail {
   font-family: "Roboto";
   font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+.introduce .swiper {
+  width: 100%;
+  height: 100%;
+  padding-left: 20px;
+}
+.introduce .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.introduce .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=comm.css.map */
