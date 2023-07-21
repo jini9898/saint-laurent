@@ -268,13 +268,7 @@ legend {
 }
 
 .container {
-  padding: 0 30px;
-  position: relative;
-}
-
-.wrap {
-  padding-top: 70px;
-  padding-bottom: 300px;
+  padding: 0 4%;
 }
 
 #header {
@@ -284,6 +278,445 @@ legend {
   left: 0;
   right: 0;
   z-index: 3;
+}
+#header #logo img {
+  height: 21px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#header .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+#header .btn-g {
+  height: 40px;
+  width: 70px;
+}
+#header .btn-g::before {
+  font-size: 20px;
+  font-family: "Font Awesome 6 free";
+}
+#header .lst-util .btn-search::before {
+  content: "\f002";
+  font-family: "Font Awesome 6 free";
+  font-weight: 900;
+  padding: 5px;
+}
+#header .lst-util2 .btn-ham::before {
+  content: "\f007";
+  font-family: "Font Awesome 6 free";
+  font-weight: 500;
+  padding: 5px;
+}
+
+.main_image .main_thumnail {
+  padding: 0;
+  background: no-repeat 0 0;
+  background-size: cover;
+  margin-bottom: 40px;
+}
+.main_image .main_thumnail img {
+  max-width: 1010px;
+}
+
+.product-description .product-name {
+  font-family: "Libre Baskerville";
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0 20px 39px;
+  text-align: center;
+  line-height: normal;
+}
+
+.product-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 700;
+  margin: auto 0;
+  padding: 0 20px 36px;
+}
+.product-price::before {
+  content: "";
+  flex-grow: 1;
+  background: rgba(0, 0, 0, 0.35);
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0 10px 0 0;
+}
+.product-price::after {
+  content: "";
+  flex-grow: 1;
+  background: rgba(0, 0, 0, 0.35);
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0 0 0 10px;
+}
+
+.productSwatches-container {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 205px;
+  height: 50px;
+}
+.productSwatches-container .productSwatches {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  background: white;
+  border: 1px solid #000;
+}
+.productSwatches-container .black {
+  width: 25px;
+  height: 25px;
+  background: #000;
+}
+.productSwatches-container .white {
+  width: 25px;
+  height: 25px;
+  background: #faf7ed;
+}
+.productSwatches-container .storm {
+  width: 25px;
+  height: 25px;
+  background: #4d4d4d;
+}
+.productSwatches-container .baige {
+  width: 25px;
+  height: 25px;
+  background: #d19e6b;
+}
+.productSwatches-container .color1::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 1.5px;
+  background: #000;
+}
+
+.productSwatches-label p {
+  padding: 32px 0 36px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+}
+
+.size-container {
+  width: 205px;
+  margin: 0 auto 34px;
+}
+.size-container .size-frame {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  height: 30px;
+  margin-bottom: 36px;
+}
+.size-container .size-frame::after {
+  content: "     ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 205px;
+  background: #000;
+  border: 2px solid #999;
+}
+.size-container .size-frame .s-size {
+  display: inline-block;
+  font-family: "Libre Baskerville";
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #999;
+}
+.size-container .size-frame .m-size {
+  display: inline-block;
+  font-family: "Libre Baskerville";
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+}
+.size-container .size-frame .on::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -3px;
+  z-index: 2;
+  width: 105px;
+  background: #000;
+  border: 2px solid #000;
+}
+
+.delivery-information {
+  margin: 0 auto 34px;
+}
+.delivery-information p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.5;
+  justify-content: center;
+}
+
+.cart-button {
+  display: flex;
+  width: 205px;
+  height: 30px;
+  cursor: pointer;
+  background: #000;
+  border: none;
+  margin: 0 auto 40px;
+}
+.cart-button p {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  margin: auto;
+}
+
+.sub__tabmenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.sub__tabmenu .details-tabs {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  font-size: 14px;
+  cursor: pointer;
+  width: 33.333%;
+  height: 50px;
+  margin: auto;
+  text-align: center;
+  font-weight: 400;
+  font-family: "Libre Baskerville";
+}
+.sub__tabmenu .details-tabs::after {
+  position: absolute;
+  content: "";
+  bottom: -10px;
+  left: 0px;
+  right: 0;
+  height: 4px;
+  background: #999;
+}
+.sub__tabmenu .on {
+  position: relative;
+  font-family: "Libre Baskerville";
+  font-size: 16px;
+  font-weight: 700;
+}
+.sub__tabmenu .on::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: #000;
+}
+
+.view_deatails_info {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  margin: 30px 20px 0;
+  line-height: 120%;
+}
+
+.details_wrap {
+  margin-top: 40px;
+}
+.details_wrap img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.details_wrap li:last-child img {
+  margin: 0;
+}
+
+.sub2 .fabric_care {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Libre Baskerville";
+  font-size: 18px;
+  font-weight: 700;
+  margin: auto 0px;
+  padding: 36px 20px 0;
+}
+.sub2 .fabric_care::before {
+  content: "";
+  flex-grow: 1;
+  background: rgba(0, 0, 0, 0.35);
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0 10px 0 0;
+}
+.sub2 .fabric_care::after {
+  content: "";
+  flex-grow: 1;
+  background: rgba(0, 0, 0, 0.35);
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0 0 0 10px;
+}
+.sub2 .sub2_detail {
+  margin-top: 30px;
+  padding: 0 20px;
+}
+.sub2 .sub2_detail .sub2_detail_txt {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.swiper-txt h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Libre Baskerville";
+  font-size: 18px;
+  font-weight: 700;
+  margin: auto 0px;
+  padding: 36px 20px 0;
+}
+.swiper-txt h2::before {
+  content: "";
+  flex-grow: 1;
+  background: rgba(0, 0, 0, 0.35);
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0 10px 0 0;
+}
+.swiper-txt h2::after {
+  content: "";
+  flex-grow: 1;
+  background: rgba(0, 0, 0, 0.35);
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0 0 0 10px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin-top: 30px;
+  padding: 0 20px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiper-txt2 h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Libre Baskerville";
+  font-size: 18px;
+  font-weight: 700;
+  margin: auto 0px;
+  padding: 36px 20px 0;
+}
+.swiper-txt2 h2::before {
+  content: "";
+  flex-grow: 1;
+  background: rgba(0, 0, 0, 0.35);
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0 10px 0 0;
+}
+.swiper-txt2 h2::after {
+  content: "";
+  flex-grow: 1;
+  background: rgba(0, 0, 0, 0.35);
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0 0 0 10px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin-top: 30px;
+  padding: 0 20px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container {
+  padding: 0 30px;
+  position: relative;
+}
+
+#header {
+  position: fixed;
+  background: #000;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 #header #logo img {
   position: absolute;
@@ -374,14 +807,8 @@ legend {
 }
 #footer .lst-sns a {
   display: flex;
-  justify-content: center;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 14px;
-  text-align: center;
-  margin: 30px 20px 0;
-  line-height: 120%;
-
+  align-items: center;
+  margin: 5px;
 }
 #footer .footerlogo {
   padding: 20px 20px;
@@ -411,95 +838,6 @@ legend {
   position: relative;
   padding: 5px;
 }
-
-.introduce .swiper-txt h2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Libre Baskerville";
-  font-size: 18px;
-  font-weight: 700;
-  margin: auto 0px;
-  padding: 36px 20px 0;
-}
-.introduce .swiper-txt h2::before {
-  content: "";
-  flex-grow: 1;
-  background: rgba(0, 0, 0, 0.35);
-  height: 1px;
-  font-size: 0px;
-  line-height: 0px;
-  margin: 0 10px 0 0;
-}
-.introduce .swiper-txt h2::after {
-  content: "";
-  flex-grow: 1;
-  background: rgba(0, 0, 0, 0.35);
-  height: 1px;
-  font-size: 0px;
-  line-height: 0px;
-  margin: 0 0 0 10px;
-}
-.introduce .swiper {
-  width: 100%;
-  height: 100%;
-  margin-top: 30px;
-  padding: 0 20px;
-}
-.introduce .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.introduce .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.introduce .swiper-txt2 h2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Libre Baskerville";
-  font-size: 18px;
-  font-weight: 700;
-  margin: auto 0px;
-  padding: 36px 20px 0;
-}
-.introduce .swiper-txt2 h2::before {
-  content: "";
-  flex-grow: 1;
-  background: rgba(0, 0, 0, 0.35);
-  height: 1px;
-  font-size: 0px;
-  line-height: 0px;
-  margin: 0 10px 0 0;
-}
-.introduce .swiper-txt2 h2::after {
-  content: "";
-  flex-grow: 1;
-  background: rgba(0, 0, 0, 0.35);
-  height: 1px;
-  font-size: 0px;
-  line-height: 0px;
-  margin: 0 0 0 10px;
-}
-.introduce .swiper {
-  width: 100%;
-  height: 100%;
-  margin-top: 30px;
-  padding: 0 20px;
-}
-.introduce .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-
 #footer .ocean {
   overflow: hidden;
   width: 100%;
@@ -511,7 +849,6 @@ legend {
   top: 50%;
   margin-top: 80px;
   transform: translateY(-50%);
-
   display: flex;
   align-items: center;
 }
@@ -522,8 +859,261 @@ legend {
   top: 13px;
   width: 6400px;
   height: 198px;
+  /*YOUTUBE VIDEO*/
   animation: wave 20s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
   transform: translate3d(0, 0, 0);
+}
+#footer .wave .container {
+  padding: 0 4%;
+}
+#footer .wave body {
+  background: #000;
+}
+#footer .wave #header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+#footer .wave #header #logo img {
+  height: 21px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#footer .wave #header .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+#footer .wave #header .btn-g {
+  height: 40px;
+  width: -10%;
+}
+#footer .wave #header .btn-g::before {
+  font-size: 20px;
+  font-family: "Font Awesome 6 free";
+}
+#footer .wave #header .lst-util .btn-search::before {
+  content: "\f002";
+  font-family: "Font Awesome 6 free";
+  font-weight: 900;
+  padding: 5px;
+  color: #fff;
+}
+#footer .wave #header .lst-util2 .btn-ham::before {
+  content: "\f007";
+  margin: -10%;
+  font-family: "Font Awesome 6 free";
+  font-weight: 500;
+  color: #fff;
+}
+#footer .wave .contents {
+  z-index: -5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+#footer .wave .contents .cont-main {
+  display: block;
+}
+#footer .wave .contents .cont-main img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#footer .wave .part-g img {
+  width: 100%;
+  vertical-align: middle;
+  overflow-clip-margin: cotent-box;
+  overflow: clip;
+  margin-top: 100px;
+}
+#footer .wave .part-g .main-tg {
+  margin: 40px 40px;
+}
+#footer .wave .main-tg {
+  color: #fff;
+  text-align: center;
+  /* roboto-r/body1-18 */
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 21.6px */
+}
+#footer .wave .youtube {
+  position: relative;
+  height: 700px;
+  background-color: #333;
+  overflow: hidden;
+}
+#footer .wave .youtube .youtube__area {
+  width: 1920px;
+  position: absolute;
+  /* 16비율 */
+  left: 50%;
+  margin-left: -960px;
+  /* 9비율 */
+  top: 50%;
+  margin-top: -540px;
+}
+#footer .wave .youtube .youtube__area::before {
+  content: "";
+  display: block;
+  /* 16:9 영상 비율로 요소 크기 만들기! */
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+}
+#footer .wave .youtube .youtube__cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#footer .wave .swiper {
+  width: 100%;
+  height: 100%;
+}
+#footer .wave .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#footer .wave .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#footer .wave .slide-t {
+  color: #ffffff;
+  text-align: center;
+  font-family: Libre Baskerville;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 80px 60px;
+}
+#footer .wave .slide-b {
+  text-decoration: underline;
+  color: #ffffff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 40px 80px;
+}
+#footer .wave #player {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#footer .wave #footer {
+  position: relative;
+  margin-bottom: 60px;
+}
+#footer .wave #footer .lst-foot > li {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid #ffffff;
+}
+#footer .wave #footer .lst-foot > li:last-child {
+  border-bottom: 1px solid #000;
+}
+#footer .wave #footer .lst-sns {
+  display: flex;
+}
+#footer .wave #footer .lst-sns a {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+#footer .wave #footer .footerlogo {
+  padding: 20px 20px;
+}
+#footer .wave #footer .footerlogo img {
+  display: block;
+  margin: 0 auto;
+  width: 190px;
+  height: 20px;
+  flex-shrink: 0;
+}
+#footer .wave #footer .material-icons-outlined {
+  position: absolute;
+  display: inline-block;
+  margin-top: 4px;
+  font-size: 0.9rem;
+}
+#footer .wave #footer .iconbox {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 10px;
+  color: #ffffff;
+}
+#footer .wave #footer .fp {
+  position: relative;
+  padding: 5px;
+  color: #ffffff;
+}
+#footer .wave #footer .footerbox {
+  position: relative;
+  padding: 5px;
+  color: #ffffff;
+}
+#footer .wave #footer .ocean {
+  overflow: hidden;
+  width: 100%;
+  border-bottom: 1px solid #ffffff;
+  border-top: 1px solid #ffffff;
+  margin-bottom: 40px;
+  padding: 0 0;
+  height: 50px;
+  top: 50%;
+  margin-top: 80px;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+}
+#footer .wave #footer .wave {
+  background: url(../../images/saintlaurent-logo-slide-white.png) repeat-x;
+  position: absolute;
+  z-index: 100;
+  top: 13px;
+  width: 6400px;
+  height: 198px;
+  animation: wave 20s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
 }
 @keyframes wave {
   0% {
