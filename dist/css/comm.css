@@ -267,50 +267,6 @@ legend {
   height: 100px;
 }
 
-.container {
-  padding: 0 4%;
-}
-
-#header {
-  position: fixed;
-  background: #000;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 3;
-}
-#header #logo img {
-  height: 21px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-#header .inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 70px;
-}
-#header .btn-g {
-  height: 40px;
-  width: 70px;
-}
-#header .btn-g::before {
-  font-size: 20px;
-  font-family: "Font Awesome 6 free";
-}
-#header .lst-util .btn-search::before {
-  content: "\f002";
-  font-family: "Font Awesome 6 free";
-  font-weight: 900;
-  padding: 5px;
-}
-#header .lst-util2 .btn-ham::before {
-  content: "\f007";
-  font-family: "Font Awesome 6 free";
-  font-weight: 500;
-  padding: 5px;
-}
-
 .main_image .main_thumnail {
   padding: 0;
   background: no-repeat 0 0;
@@ -711,6 +667,11 @@ legend {
   position: relative;
 }
 
+.wrap {
+  padding: 70px 0 60px;
+  background: #000;
+}
+
 #header {
   position: fixed;
   background: #000;
@@ -753,9 +714,46 @@ legend {
   color: #fff;
 }
 
-#main {
-  padding-top: 70px;
+#header {
+  position: fixed;
+  background: #000;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
 }
+#header #logo img {
+  height: 21px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#header .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+#header .btn-g {
+  height: 40px;
+  width: 70px;
+}
+#header .btn-g::before {
+  font-size: 20px;
+  font-family: "Font Awesome 6 free";
+}
+#header .lst-util .btn-search::before {
+  content: "\f002";
+  font-family: "Font Awesome 6 free";
+  font-weight: 900;
+  padding: 5px;
+}
+#header .lst-util2 .btn-ham::before {
+  content: "\f007";
+  font-family: "Font Awesome 6 free";
+  font-weight: 500;
+  padding: 5px;
+}
+
 #main img {
   width: 100%;
 }
@@ -821,7 +819,6 @@ legend {
   flex-shrink: 0;
 }
 #footer .material-icons-outlined {
-  position: absolute;
   display: inline-block;
   font-size: 0.9rem;
 }
@@ -859,7 +856,6 @@ legend {
   top: 13px;
   width: 6400px;
   height: 198px;
-  /*YOUTUBE VIDEO*/
   animation: wave 20s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
   transform: translate3d(0, 0, 0);
 }
@@ -868,46 +864,6 @@ legend {
 }
 #footer .wave body {
   background: #000;
-}
-#footer .wave #header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-}
-#footer .wave #header #logo img {
-  height: 21px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-#footer .wave #header .inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 70px;
-}
-#footer .wave #header .btn-g {
-  height: 40px;
-  width: -10%;
-}
-#footer .wave #header .btn-g::before {
-  font-size: 20px;
-  font-family: "Font Awesome 6 free";
-}
-#footer .wave #header .lst-util .btn-search::before {
-  content: "\f002";
-  font-family: "Font Awesome 6 free";
-  font-weight: 900;
-  padding: 5px;
-  color: #fff;
-}
-#footer .wave #header .lst-util2 .btn-ham::before {
-  content: "\f007";
-  margin: -10%;
-  font-family: "Font Awesome 6 free";
-  font-weight: 500;
-  color: #fff;
 }
 #footer .wave .contents {
   z-index: -5;
@@ -931,17 +887,67 @@ legend {
   -o-object-fit: cover;
      object-fit: cover;
 }
-#footer .wave .part-g img {
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+#header #logo img {
+  height: 21px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#header .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+#header .btn-g {
+  height: 40px;
+  width: -10%;
+}
+#header .btn-g::before {
+  font-size: 20px;
+  font-family: "Font Awesome 6 free";
+}
+#header .lst-util .btn-search::before {
+  content: "\f002";
+  font-family: "Font Awesome 6 free";
+  font-weight: 900;
+  padding: 5px;
+  color: #fff;
+}
+#header .lst-util2 .btn-ham::before {
+  content: "\f007";
+  margin: -10%;
+  font-family: "Font Awesome 6 free";
+  font-weight: 500;
+  color: #fff;
+}
+
+.sec-collect .part-g img {
   width: 100%;
   vertical-align: middle;
   overflow-clip-margin: cotent-box;
   overflow: clip;
   margin-top: 100px;
 }
-#footer .wave .part-g .main-tg {
+.sec-collect .part-g .main-tg {
   margin: 40px 40px;
 }
-#footer .wave .main-tg {
+.sec-collect .main-tg {
   color: #fff;
   text-align: center;
   /* roboto-r/body1-18 */
@@ -951,13 +957,15 @@ legend {
   font-weight: 400;
   line-height: 120%; /* 21.6px */
 }
-#footer .wave .youtube {
+
+/*YOUTUBE VIDEO*/
+.youtube {
   position: relative;
   height: 700px;
   background-color: #333;
   overflow: hidden;
 }
-#footer .wave .youtube .youtube__area {
+.youtube .youtube__area {
   width: 1920px;
   position: absolute;
   /* 16비율 */
@@ -967,7 +975,7 @@ legend {
   top: 50%;
   margin-top: -540px;
 }
-#footer .wave .youtube .youtube__area::before {
+.youtube .youtube__area::before {
   content: "";
   display: block;
   /* 16:9 영상 비율로 요소 크기 만들기! */
@@ -975,7 +983,14 @@ legend {
   height: 0;
   padding-top: 56.25%;
 }
-#footer .wave .youtube .youtube__cover {
+.youtube #player {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.youtube .youtube__cover {
   position: absolute;
   top: 0;
   left: 0;
@@ -983,11 +998,12 @@ legend {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
 }
-#footer .wave .swiper {
+
+.swiper {
   width: 100%;
   height: 100%;
 }
-#footer .wave .swiper-slide {
+.swiper .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -995,14 +1011,14 @@ legend {
   justify-content: center;
   align-items: center;
 }
-#footer .wave .swiper-slide img {
+.swiper .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-#footer .wave .slide-t {
+.swiper .slide-t {
   color: #ffffff;
   text-align: center;
   font-family: Libre Baskerville;
@@ -1012,7 +1028,7 @@ legend {
   line-height: normal;
   margin: 80px 60px;
 }
-#footer .wave .slide-b {
+.swiper .slide-b {
   text-decoration: underline;
   color: #ffffff;
   text-align: center;
@@ -1023,67 +1039,57 @@ legend {
   line-height: normal;
   margin: 40px 80px;
 }
-#footer .wave #player {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-#footer .wave #footer {
+
+#footer {
   position: relative;
-  margin-bottom: 60px;
 }
-#footer .wave #footer .lst-foot > li {
+#footer .lst-foot > li {
   display: flex;
   justify-content: space-between;
+  position: relative;
   width: 100%;
-  border-bottom: 1px solid #ffffff;
+  padding: 5px;
+  border-bottom: 1px solid #fff;
+  color: #ffffff;
 }
-#footer .wave #footer .lst-foot > li:last-child {
+#footer .lst-foot > li:last-child {
   border-bottom: 1px solid #000;
 }
-#footer .wave #footer .lst-sns {
+#footer .lst-sns {
   display: flex;
 }
-#footer .wave #footer .lst-sns a {
+#footer .lst-sns a {
   display: flex;
   align-items: center;
   margin: 5px;
 }
-#footer .wave #footer .footerlogo {
+#footer .footerlogo {
   padding: 20px 20px;
 }
-#footer .wave #footer .footerlogo img {
+#footer .footerlogo img {
   display: block;
   margin: 0 auto;
   width: 190px;
   height: 20px;
   flex-shrink: 0;
 }
-#footer .wave #footer .material-icons-outlined {
-  position: absolute;
+#footer .arrow-icon {
   display: inline-block;
   margin-top: 4px;
   font-size: 0.9rem;
 }
-#footer .wave #footer .iconbox {
+#footer .iconbox {
   display: flex;
   flex-direction: row-reverse;
   margin-right: 10px;
   color: #ffffff;
 }
-#footer .wave #footer .fp {
+#footer .footerbox {
   position: relative;
   padding: 5px;
   color: #ffffff;
 }
-#footer .wave #footer .footerbox {
-  position: relative;
-  padding: 5px;
-  color: #ffffff;
-}
-#footer .wave #footer .ocean {
+#footer .ocean {
   overflow: hidden;
   width: 100%;
   border-bottom: 1px solid #ffffff;
@@ -1097,7 +1103,7 @@ legend {
   display: flex;
   align-items: center;
 }
-#footer .wave #footer .wave {
+#footer .wave {
   background: url(../../images/saintlaurent-logo-slide-white.png) repeat-x;
   position: absolute;
   z-index: 100;
@@ -1106,14 +1112,6 @@ legend {
   height: 198px;
   animation: wave 20s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
   transform: translate3d(0, 0, 0);
-}
-@keyframes wave {
-  0% {
-    margin-left: 0;
-  }
-  100% {
-    margin-left: -1600px;
-  }
 }
 @keyframes wave {
   0% {
