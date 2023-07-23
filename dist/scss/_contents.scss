@@ -84,12 +84,13 @@
   }
 }
 
-.product-description {
+.product-wrap {
   .product-name {
     font-family: "Libre Baskerville";
     font-size: 16px;
     font-weight: 700;
-    padding: 0 20px 39px;
+    padding: 0 20px;
+    margin-bottom: 40px;
     text-align: center;
     line-height: normal;
   }
@@ -102,8 +103,8 @@
   font-family: "Roboto";
   font-size: 16px;
   font-weight: 700;
-  margin: auto 0;
-  padding: 0 20px 36px;
+  margin-bottom: 40px;
+  padding: 0 20px;
   &::before {
     content: "";
     flex-grow: 1;
@@ -124,59 +125,132 @@
   }
 }
 
-.productSwatches-container {
+// .productSwatches-container {
+//   display: flex;
+//   justify-content: space-between;
+//   margin: auto;
+//   width: 205px;
+//   height: 50px;
+//   .productSwatches {
+//     position: relative;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     width: 35px;
+//     height: 35px;
+//     background: white;
+//     border: 1px solid #000;
+//   }
+//   .black {
+//     width: 25px;
+//     height: 25px;
+//     background: #000;
+//   }
+
+//   .white {
+//     width: 25px;
+//     height: 25px;
+//     background: #faf7ed;
+//   }
+
+//   .storm {
+//     width: 25px;
+//     height: 25px;
+//     background: #4d4d4d;
+//   }
+
+//   .baige {
+//     width: 25px;
+//     height: 25px;
+//     background: #d19e6b;
+//   }
+//   .color1::after {
+//     content: "";
+//     position: absolute;
+//     bottom: -10px;
+//     left: 0;
+//     width: 100%;
+//     height: 1.5px;
+//     background: #000;
+//   }
+// }
+
+// .productSwatches-label {
+//   p {
+//     padding: 32px 0 36px;
+//     font-family: "Roboto";
+//     font-weight: 400;
+//     font-size: 16px;
+//     text-align: center;
+//   }
+// }
+
+.color-options {
   display: flex;
-  justify-content: space-between;
-  margin: auto;
-  width: 205px;
-  height: 50px;
-  .productSwatches {
-    position: relative;
+  justify-content: center;
+  height: 100px;
+  position: relative;
+  margin-bottom: 40px;
+  input[type="radio"] {
+    display: none;
+  }
+  .color-picker {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 35px;
-    height: 35px;
-    background: white;
-    border: 1px solid #000;
+    justify-content: space-between;
+    width: 205px;
+    height: 37px;
+    margin-bottom: 50px;
+    label {
+      position: relative;
+      display: flex;
+      width: 35px;
+      height: 35px;
+      align-items: center;
+      justify-content: center;
+      background: white;
+      border: 1px solid #000;
+      cursor: pointer;
+      user-select: none;
+      &::after {
+        position: absolute;
+        content: " ";
+        bottom: -10px;
+        left: 0;
+        width: 100%;
+        border-bottom: 2px solid transparent;
+      }
+      &.active,
+      &:hover {
+        opacity: 1;
+        &:after {
+          border-color: rgb(0, 0, 0);
+        }
+      }
+    }
+    span {
+      display: block;
+      width: 25px;
+      height: 25px;
+    }
+    .black {
+      background: #000;
+    }
+    .blancvintage {
+      background: #faf7ed;
+    }
+    .storm {
+      background: #4d4d4d;
+    }
+    .darkbaige {
+      background: #d19e6b;
+    }
   }
-  .black {
-    width: 25px;
-    height: 25px;
-    background: #000;
-  }
-
-  .white {
-    width: 25px;
-    height: 25px;
-    background: #faf7ed;
-  }
-
-  .storm {
-    width: 25px;
-    height: 25px;
-    background: #4d4d4d;
-  }
-
-  .baige {
-    width: 25px;
-    height: 25px;
-    background: #d19e6b;
-  }
-  .color1::after {
-    content: "";
+  .color-picker-txt:not(.color-options) {
+    display: block;
     position: absolute;
-    bottom: -10px;
-    left: 0;
-    width: 100%;
-    height: 1.5px;
-    background: #000;
-  }
-}
-
-.productSwatches-label {
-  p {
-    padding: 32px 0 36px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
     font-family: "Roboto";
     font-weight: 400;
     font-size: 16px;
@@ -249,7 +323,6 @@
   background: #000;
   border: none;
   margin: 0 auto 40px;
-
   p {
     font-family: "Roboto";
     font-weight: 700;
@@ -261,79 +334,81 @@
   }
 }
 
-.sub__tabmenu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-  .details-tabs {
+.product-information-tabs-container {
+  .product-information-tabs {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-evenly;
-    position: relative;
-    font-size: 14px;
-    cursor: pointer;
-    width: 33.333%;
-    height: 50px;
-    margin: auto;
-    text-align: center;
+    padding: 0 20px;
+    .details-tabs {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      position: relative;
+      font-size: 14px;
+      // cursor: pointer;
+      width: 33.333%;
+      height: 50px;
+      margin: auto;
+      text-align: center;
+      font-weight: 400;
+      font-family: "Libre Baskerville";
+      // letter-spacing: 2px;
+      &::after {
+        position: absolute;
+        content: "";
+        bottom: -10px;
+        left: 0px;
+        right: 0;
+        height: 4px;
+        background: #999;
+      }
+    }
+    .on {
+      position: relative;
+      font-family: "Libre Baskerville";
+      font-size: 16px;
+      font-weight: 700;
+      &::after {
+        position: absolute;
+        content: "";
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: #000;
+      }
+    }
+  }
+  .product-information-tabs-panel {
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto";
     font-weight: 400;
-    font-family: "Libre Baskerville";
-    // letter-spacing: 2px;
-    &::after {
-      position: absolute;
-      content: "";
-      bottom: -10px;
-      left: 0px;
-      right: 0;
-      height: 4px;
-      background: #999;
-    }
-  }
-  .on {
-    position: relative;
-    font-family: "Libre Baskerville";
-    font-size: 16px;
-    font-weight: 700;
-    &::after {
-      position: absolute;
-      content: "";
-      left: 0;
-      right: 0;
-      height: 4px;
-      background: #000;
-    }
+    font-size: 14px;
+    text-align: center;
+    margin: 30px 20px 0;
+    line-height: 120%;
   }
 }
 
-.view_deatails_info {
-  display: flex;
-  justify-content: center;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 14px;
-  text-align: center;
-  margin: 30px 20px 0;
-  line-height: 120%;
-}
-
-.details_wrap {
+.de-image-resource {
   margin-top: 40px;
-  img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    margin-bottom: 10px;
-    object-fit: cover;
-    // object-position: 50% 50%;
-  }
-  li:last-child img {
-    margin: 0;
+  .de-image-tab {
+    .de-image {
+      display: block;
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+      object-fit: cover;
+    }
+    li:last-child img {
+      margin: 0;
+    }
   }
 }
 
-.sub2 {
-  .fabric_care {
+.product-information-item-list {
+  .item-list-header {
     display: flex;
     // flex-basis: 100%;
     justify-content: center;
@@ -362,10 +437,10 @@
       margin: 0 0 0 10px;
     }
   }
-  .sub2_detail {
+  .item-list {
     margin-top: 30px;
     padding: 0 20px;
-    .sub2_detail_txt {
+    .item-list-txt {
       font-family: "Roboto";
       font-size: 14px;
       font-weight: 400;
@@ -374,10 +449,9 @@
   }
 }
 
-.swiper-txt {
-  h2 {
+.recommendations-carousel-wrap {
+  .recommendations-carousel-header {
     display: flex;
-    // flex-basis: 100%;
     justify-content: center;
     align-items: center;
     font-family: "Libre Baskerville";
@@ -428,8 +502,9 @@
   height: 100%;
   object-fit: cover;
 }
-.swiper-txt2 {
-  h2 {
+
+.recently-view-carousel-wrap {
+  .recently-view-carousel-header {
     display: flex;
     // flex-basis: 100%;
     justify-content: center;
@@ -458,28 +533,4 @@
       margin: 0 0 0 10px;
     }
   }
-}
-
-.swiper {
-  width: 100%;
-  height: 100%;
-  margin-top: 30px;
-  padding: 0 20px;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  // margin: auto;
 }
