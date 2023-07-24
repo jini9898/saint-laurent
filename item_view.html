@@ -122,25 +122,6 @@
             <span class="blind">2970000 won</span>
           </div>
 
-          <!-- <div class="productSwatches-container">
-            <div class="productSwatches color1">
-              <p class="black"></p>
-            </div>
-            <div class="productSwatches color2">
-              <p class="white"></p>
-            </div>
-            <div class="productSwatches color3">
-              <p class="storm"></p>
-            </div>
-            <div class="productSwatches color4">
-              <p class="baige"></p>
-            </div>
-          </div>
-          <div class="productSwatches-label">
-            <p>COLOR : BLACK</p>
-            <span class="blind">컬러 블랙</span>
-          </div> -->
-
           <div class="color-options">
             <div class="color-picker">
               <input type="radio" name="color" id="black" />
@@ -168,31 +149,10 @@
             </div>
           </div>
 
-          <!-- <div class="size-container">
-            <div class="size-frame">
-              <div class="size-item">
-                <div class="s-size">
-                  SMALL
-                  <span class="blind">스몰</span>
-                </div>
-              </div>
-              <div class="size-item on">
-                <div class="m-size">
-                  MEDIUM
-                  <span class="blind">미디움</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="delivery-information">
-            <p>AVERAGE DELIVERY TIME</p>
-            <p>: 3-5 WORKING DAYS</p>
-          </div> -->
-
           <div class="size-option">
             <div class="size-picker">
               <ul class="size-picker-tab">
-                <li class="size size-tab1 ">
+                <li class="size size-tab1">
                   <a href="#">SMALL</a>
                 </li>
                 <li class="size size-tab2 on">
@@ -201,7 +161,7 @@
               </ul>
               <div class="size-delivery">
                 <p>AVERAGE DELIVERY TIME</p>
-                 <p>: 3-5 WORKING DAYS</p>
+                <p>: 3-5 WORKING DAYS</p>
               </div>
             </div>
           </div>
@@ -381,59 +341,60 @@
                       alt=""
                     />
                   </a>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <img
-                      src="/images/thumb/item_view/recently_view6.jpg"
-                      alt=""
-                    />
-                  </a>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img
+                        src="/images/thumb/item_view/recently_view6.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img
+                        src="/images/thumb/item_view/recently_view7.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img
+                        src="/images/thumb/item_view/recently_view8.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img
+                        src="/images/thumb/item_view/recently_view9.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img
+                        src="/images/thumb/item_view/recently_view10.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
                 </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <img
-                      src="/images/thumb/item_view/recently_view7.jpg"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <img
-                      src="/images/thumb/item_view/recently_view8.jpg"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <img
-                      src="/images/thumb/item_view/recently_view9.jpg"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <img
-                      src="/images/thumb/item_view/recently_view10.jpg"
-                      alt=""
-                    />
-                  </a>
-                </div>
+                <!-- <div class="swiper-pagination"></div> -->
               </div>
-              <!-- <div class="swiper-pagination"></div> -->
+              <script>
+                var swiper = new Swiper(".mySwiper", {
+                  slidesPerView: 2,
+                  spaceBetween: 10,
+                  pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                  },
+                });
+              </script>
             </div>
-            <script>
-              var swiper = new Swiper(".mySwiper", {
-                slidesPerView: 2,
-                spaceBetween: 10,
-                pagination: {
-                  el: ".swiper-pagination",
-                  clickable: true,
-                },
-              });
-            </script>
           </div>
         </div>
       </main>
@@ -524,6 +485,34 @@
           </ul>
         </div>
       </footer>
+
+      <div id="modal" class="modal-dimmed">
+        <div class="modal-wrap">
+          <div class="modal-head">
+            <h3>ADD TO CART</h3>
+            <button>
+              <span class="material-icons-outlined checked" > close </span>
+            </button>
+          </div>
+          <div class="modal-main">
+            <img src="./images/thumb/item_view/black1.jpg" alt="" />
+            <div class="modal-element">
+              <ul class="modal-element-title">
+                <li class="modal-txt modal1">
+                  KATE MEDIUM CHAIN BAG IN GRAIN DE POUDRE EMBOSSED LEATHER
+                </li>
+                <li class="modal-txt modal2">￦ 2,970,000</li>
+                <li class="modal-txt modal3">COLOR : BLACK</li>
+                <li class="modal-txt modal4">QUANTITY : 1</li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal-button">
+            <button class="shopping-bag">SHOPPING BAG</button>
+            <button class="checkout">CHECK OUT</button>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
