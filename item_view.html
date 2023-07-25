@@ -56,7 +56,8 @@
     <link rel="stylesheet" href="./dist/css/comm.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="./dist/js/comm.js"></script>
+    <script defer src="./dist/js/comm.js"></script>
+    <script defer src="./dist/js/_item_view.js"></script>
   </head>
   <body>
     <div id="u-skip">
@@ -111,88 +112,91 @@
         </div>
 
         <div class="product-wrap">
-          <div class="product-name">
-            KATE MEDIUM CHAIN BAG IN GRAIN DE POUDRE EMBOSSED LEATHER
-            <span class="blind">
+          <section class="product-selection container">
+            <div class="product-name">
               KATE MEDIUM CHAIN BAG IN GRAIN DE POUDRE EMBOSSED LEATHER
-            </span>
-          </div>
-          <div class="product-price">
-            ￦ 2,970,000
-            <span class="blind">2970000 won</span>
-          </div>
-
-          <div class="color-options">
-            <div class="color-picker">
-              <input type="radio" name="color" id="black" />
-              <label for="black" class="active">
-                <span class="black"></span>
-              </label>
-              <input type="radio" name="color" id="blancvintage" />
-              <label for="blancvintage">
-                <span class="blancvintage"></span>
-              </label>
-              <input type="radio" name="color" id="storm" />
-              <label for="storm">
-                <span class="storm"></span>
-              </label>
-              <input type="radio" name="color" id="darkbaige" />
-              <label for="darkbaige">
-                <span class="darkbaige"></span>
-              </label>
+              <span class="blind">
+                KATE MEDIUM CHAIN BAG IN GRAIN DE POUDRE EMBOSSED LEATHER
+              </span>
             </div>
-            <div class="color-picker-txt">
-              <p class="colortxt color1">COLOR : BLACK</p>
-              <!-- <p class="colortxt color2">COLOR : BLANC VINTAGE</p>
-              <p class="colortxt color3">COLOR : STORM</p>
-              <p class="colortxt color4">COLOR : DARK BAIGE</p> -->
+            <div class="product-price">
+              ￦ 2,970,000
+              <span class="blind">2970000 won</span>
             </div>
-          </div>
 
-          <div class="size-option">
-            <div class="size-picker">
-              <ul class="size-picker-tab">
-                <li class="size size-tab1">
-                  <a href="#">SMALL</a>
-                </li>
-                <li class="size size-tab2 on">
-                  <a href="#">MEDIUM</a>
-                </li>
-              </ul>
-              <div class="size-delivery">
-                <p>AVERAGE DELIVERY TIME</p>
-                <p>: 3-5 WORKING DAYS</p>
+            <div class="color-options">
+              <div class="color-picker">
+                <input type="radio" name="color" id="black" />
+                <label for="black" class="active">
+                  <span class="black"></span>
+                </label>
+                <input type="radio" name="color" id="blancvintage" />
+                <label for="blancvintage">
+                  <span class="blancvintage"></span>
+                </label>
+                <input type="radio" name="color" id="storm" />
+                <label for="storm">
+                  <span class="storm"></span>
+                </label>
+                <input type="radio" name="color" id="darkbaige" />
+                <label for="darkbaige">
+                  <span class="darkbaige"></span>
+                </label>
+              </div>
+              <div class="color-picker-txt">
+                <span class="colortxt color1">COLOR : BLACK</span>
+                <!-- <p class="colortxt color2">COLOR : BLANC VINTAGE</p>
+                <p class="colortxt color3">COLOR : STORM</p>
+                <p class="colortxt color4">COLOR : DARK BAIGE</p> -->
               </div>
             </div>
-          </div>
 
-          <button class="cart-button">
-            <p>ADD TO CART</p>
-          </button>
+            <div class="size-option">
+              <div class="size-picker">
+                <ul class="size-picker-tab">
+                  <li class="size size-tab1">
+                    <a href="#">SMALL</a>
+                  </li>
+                  <li class="size size-tab2 on">
+                    <a href="#">MEDIUM</a>
+                  </li>
+                </ul>
+                <div class="size-delivery">
+                  <span class="size-delivery-txt">AVERAGE DELIVERY TIME</span>
+                  <span class="size-delivery-txt">: 3-5 WORKING DAYS</span>
+                </div>
+              </div>
+            </div>
 
-          <div class="product-information-tabs-container">
-            <ul class="product-information-tabs">
-              <li class="details-tabs on">
-                <a href="#">PRODUCT DETAILS</a>
-              </li>
-              <li class="details-tabs">
-                <a href="#tab2">FABRIC & CARE</a>
-              </li>
-              <li class="details-tabs">
-                <a href="#">FIND IN STORES</a>
-              </li>
-            </ul>
-            <div class="product-information-tabs-panel">
-              <ul>
-                <li>
-                  <div>
-                    SHOULDER BAG MADE WITH METAL FREE TANNED LEATHER, DECORATED
-                    WITH THE CASSANDRE, FEATURING A CHAIN SHOULDER STRAP
-                  </div>
+            <button class="cart-button">
+              <p>ADD TO CART</p>
+            </button>
+
+            <div class="product-information-tabs-container">
+              <ul class="product-information-tabs">
+                <li class="details-tabs on">
+                  <a href="#">PRODUCT DETAILS</a>
+                </li>
+                <li class="details-tabs">
+                  <a href="#tab2">FABRIC & CARE</a>
+                </li>
+                <li class="details-tabs">
+                  <a href="#">FIND IN STORES</a>
                 </li>
               </ul>
+              <div class="product-information-tabs-panel">
+                <ul>
+                  <li>
+                    <div>
+                      SHOULDER BAG MADE WITH METAL FREE TANNED LEATHER,
+                      DECORATED WITH THE CASSANDRE, FEATURING A CHAIN SHOULDER
+                      STRAP
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
+          </section>
 
           <div class="de-image-resource">
             <ul class="de-image-tab">
@@ -208,7 +212,7 @@
             </ul>
           </div>
 
-          <div class="product-information-item-list">
+          <div class="product-information-item-list container">
             <h2 class="item-list-header">
               FABRIC&CARE
               <a name="tab2"></a>
@@ -231,176 +235,204 @@
           </div>
 
           <div class="recommendations-carousel-wrap">
-            <h2 class="recommendations-carousel-header">YOU MAY ALSO LIKE</h2>
-            <div class="swiper mySwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <a href="#">
-                    <img src="/images/thumb/item_view/recommend1.jpg" alt="" />
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <img src="/images/thumb/item_view/recommend2.jpg" alt="" />
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <img src="/images/thumb/item_view/recommend3.jpg" alt="" />
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <img src="/images/thumb/item_view/recommend4.jpg" alt="" />
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <img src="/images/thumb/item_view/recommend5.jpg" alt="" />
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <img src="/images/thumb/item_view/recommend6.jpg" alt="" />
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <img src="/images/thumb/item_view/recommend7.jpg" alt="" />
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <img src="/images/thumb/item_view/recommend8.jpg" alt="" />
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <img src="/images/thumb/item_view/recommend9.jpg" alt="" />
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <img src="/images/thumb/item_view/recommend10.jpg" alt="" />
-                  </a>
+            <h2 class="recommendations-carousel-header container">
+              YOU MAY ALSO LIKE
+            </h2>
+            <div class="swiper-swiper-container">
+              <div class="swiper swiper-container-mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img
+                        src="/images/thumb/item_view/recommend1.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img
+                        src="/images/thumb/item_view/recommend2.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img
+                        src="/images/thumb/item_view/recommend3.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img
+                        src="/images/thumb/item_view/recommend4.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img
+                        src="/images/thumb/item_view/recommend5.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img
+                        src="/images/thumb/item_view/recommend6.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img
+                        src="/images/thumb/item_view/recommend7.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img
+                        src="/images/thumb/item_view/recommend8.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img
+                        src="/images/thumb/item_view/recommend9.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img
+                        src="/images/thumb/item_view/recommend10.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-            <script>
-              var swiper = new Swiper(".mySwiper", {
-                slidesPerView: 2,
-                spaceBetween: 10,
-                pagination: {
-                  el: ".swiper-pagination",
-                  clickable: true,
-                },
-              });
-            </script>
           </div>
 
           <div class="recently-view-carousel-wrap">
-            <h2 class="recently-view-carousel-header">RECENTLY VIWED</h2>
-            <div class="swiper mySwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <a href="#">
-                    <img
-                      src="/images/thumb/item_view/recently_view1.jpg"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <img
-                      src="/images/thumb/item_view/recently_view2.jpg"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <img
-                      src="/images/thumb/item_view/recently_view3.jpg"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <img
-                      src="/images/thumb/item_view/recently_view4.jpg"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <img
-                      src="/images/thumb/item_view/recently_view5.jpg"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <img
-                      src="/images/thumb/item_view/recently_view6.jpg"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <img
-                      src="/images/thumb/item_view/recently_view7.jpg"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <img
-                      src="/images/thumb/item_view/recently_view8.jpg"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <img
-                      src="/images/thumb/item_view/recently_view9.jpg"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <img
-                      src="/images/thumb/item_view/recently_view10.jpg"
-                      alt=""
-                    />
-                  </a>
-                </div>
+            <h2 class="recently-view-carousel-header container">
+              RECENTLY VIWED
+            </h2>
+            <div class="swiper-swiper-container">
+              <div class="swiper swiper-container-mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img
+                        src="/images/thumb/item_view/recently_view1.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img
+                        src="/images/thumb/item_view/recently_view2.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img
+                        src="/images/thumb/item_view/recently_view3.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img
+                        src="/images/thumb/item_view/recently_view4.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img
+                        src="/images/thumb/item_view/recently_view5.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img
+                        src="/images/thumb/item_view/recently_view6.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img
+                        src="/images/thumb/item_view/recently_view7.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img
+                        src="/images/thumb/item_view/recently_view8.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img
+                        src="/images/thumb/item_view/recently_view9.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img
+                        src="/images/thumb/item_view/recently_view10.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
 
-                <!-- <div class="swiper-pagination"></div> -->
+                  <!-- <div class="swiper-pagination"></div> -->
+                </div>
+                <script>
+                  // var swiper = new Swiper(".mySwiper", {
+                  //   slidesPerView: 2,
+                  //   spaceBetween: 10,
+                  //   pagination: {
+                  //     el: ".swiper-pagination",
+                  //     clickable: true,
+                  //   },
+                  // });
+                </script>
               </div>
-              <script>
-                var swiper = new Swiper(".mySwiper", {
-                  slidesPerView: 2,
-                  spaceBetween: 10,
-                  pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                  },
-                });
-              </script>
             </div>
           </div>
         </div>
       </main>
 
-      <footer id="footer">
+      <!-- <footer id="footer">
         <div class="ocean">
           <div class="wave"></div>
         </div>
@@ -485,15 +517,15 @@
             </li>
           </ul>
         </div>
-      </footer>
+      </footer> -->
 
-      <!-- <div id="modal" class="modal-dimmed">
+      <div id="modal" class="modal modal-dimmed">
         <div class="modal-wrap">
           <div class="modal-head">
             <h3>ADD TO CART</h3>
-            <button>
-              <span class="material-icons-outlined checked"> close </span>
-            </button>
+            <a href="#" class="close-modal">
+              <span class="material-icons-outlined close-modal"> close </span>
+            </a>
           </div>
           <div class="modal-main">
             <img src="./images/thumb/item_view/black1.jpg" alt="" />
@@ -509,11 +541,13 @@
             </div>
           </div>
           <div class="modal-button">
-            <button class="shopping-bag"><a href="#">SHOPPING BAG</a></button>
+            <button class="shopping-bag">
+              <a href="#">SHOPPING BAG</a>
+            </button>
             <button class="checkout"><a href="#">CHECK OUT</a></button>
           </div>
         </div>
-      </div> -->
+      </div>
     </div>
   </body>
 </html>

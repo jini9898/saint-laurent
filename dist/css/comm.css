@@ -732,7 +732,7 @@ legend {
 }
 
 .container {
-  padding: 0 4%;
+  padding: 0 30px;
 }
 
 header {
@@ -788,9 +788,8 @@ header .lst-util2 .btn-ham::before {
 
 .product-wrap .product-name {
   font-family: "Libre Baskerville";
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 700;
-  padding: 0 20px;
   margin-bottom: 40px;
   text-align: center;
   line-height: normal;
@@ -801,10 +800,9 @@ header .lst-util2 .btn-ham::before {
   justify-content: center;
   align-items: center;
   font-family: "Roboto";
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   margin-bottom: 40px;
-  padding: 0 20px;
 }
 .product-price::before {
   content: "";
@@ -964,8 +962,15 @@ header .lst-util2 .btn-ham::before {
   text-align: center;
   margin-top: 50px;
 }
+.size-option .size-delivery .size-delivery-txt {
+  display: block;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+}
 
 .cart-button {
+  all: unset;
   display: flex;
   width: 205px;
   height: 30px;
@@ -985,7 +990,7 @@ header .lst-util2 .btn-ham::before {
 }
 
 .product-information-tabs-container {
-  padding: 0 20px;
+  margin-bottom: 40px;
   box-sizing: border-box;
 }
 .product-information-tabs-container .product-information-tabs {
@@ -1008,7 +1013,7 @@ header .lst-util2 .btn-ham::before {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  font-size: 14px;
+  font-size: 16px;
   width: 33.333%;
   height: 50px;
   margin: auto;
@@ -1019,7 +1024,7 @@ header .lst-util2 .btn-ham::before {
 .product-information-tabs-container .product-information-tabs .on {
   position: relative;
   font-family: "Libre Baskerville";
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
 }
 .product-information-tabs-container .product-information-tabs .on::after {
@@ -1037,15 +1042,12 @@ header .lst-util2 .btn-ham::before {
   justify-content: center;
   font-family: "Roboto";
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
   margin: 30px 20px 0;
   line-height: 120%;
 }
 
-.de-image-resource {
-  margin-top: 40px;
-}
 .de-image-resource .de-image-tab .de-image > img {
   display: block;
   width: 100%;
@@ -1055,7 +1057,7 @@ header .lst-util2 .btn-ham::before {
      object-fit: cover;
 }
 .de-image-resource .de-image-tab .details-1 > img:last-child {
-  margin: 0;
+  margin-bottom: 40px;
 }
 
 .product-information-item-list .item-list-header {
@@ -1065,8 +1067,7 @@ header .lst-util2 .btn-ham::before {
   font-family: "Libre Baskerville";
   font-size: 18px;
   font-weight: 700;
-  margin: auto 0px;
-  padding: 36px 20px 0;
+  margin-bottom: 40px;
 }
 .product-information-item-list .item-list-header::before {
   content: "";
@@ -1087,8 +1088,7 @@ header .lst-util2 .btn-ham::before {
   margin: 0 0 0 10px;
 }
 .product-information-item-list .item-list {
-  margin-top: 30px;
-  padding: 0 20px;
+  margin-bottom: 40px;
 }
 .product-information-item-list .item-list .item-list-txt {
   font-family: "Roboto";
@@ -1104,8 +1104,7 @@ header .lst-util2 .btn-ham::before {
   font-family: "Libre Baskerville";
   font-size: 18px;
   font-weight: 700;
-  margin: auto 0px;
-  padding: 36px 20px 0;
+  margin-bottom: 40px;
 }
 .recommendations-carousel-wrap .recommendations-carousel-header::before {
   content: "";
@@ -1126,21 +1125,24 @@ header .lst-util2 .btn-ham::before {
   margin: 0 0 0 10px;
 }
 
-.swiper-wrapper a {
+.swiper-swiper-container {
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.swiper-swiper-container .swiper-wrapper a {
   display: flex;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-
-.swiper {
-  margin-top: 30px;
-  padding: 0 20px;
+.swiper-swiper-container .swiper {
+  width: 90%;
   text-align: center;
+  overflow: visible;
 }
-
-.swiper-slide {
+.swiper-swiper-container .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -1150,8 +1152,7 @@ header .lst-util2 .btn-ham::before {
   -o-object-fit: cover;
      object-fit: cover;
 }
-
-.swiper-slide img {
+.swiper-swiper-container .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
@@ -1164,8 +1165,7 @@ header .lst-util2 .btn-ham::before {
   font-family: "Libre Baskerville";
   font-size: 18px;
   font-weight: 700;
-  margin: auto 0px;
-  padding: 36px 20px 0;
+  margin-bottom: 40px;
 }
 .recently-view-carousel-wrap .recently-view-carousel-header::before {
   content: "";
@@ -1184,6 +1184,10 @@ header .lst-util2 .btn-ham::before {
   font-size: 0px;
   line-height: 0px;
   margin: 0 0 0 10px;
+}
+
+.modal {
+  display: none;
 }
 
 .modal-dimmed {
@@ -1215,10 +1219,10 @@ header .lst-util2 .btn-ham::before {
   font-size: 16px;
   padding-bottom: 15px;
 }
-.modal-dimmed .modal-wrap .modal-head button {
-  margin-top: -7px;
+.modal-dimmed .modal-wrap .modal-head a span {
   width: 40px;
   height: 40px;
+  text-align: end;
 }
 .modal-dimmed .modal-wrap .modal-main {
   display: flex;
@@ -1252,13 +1256,11 @@ header .lst-util2 .btn-ham::before {
 }
 .modal-dimmed .modal-wrap .modal-button {
   display: flex;
-}
-.modal-dimmed .modal-wrap .modal-button button {
-  display: block;
-  width: 160px;
+  width: 100%;
   height: 45px;
 }
 .modal-dimmed .modal-wrap .modal-button .shopping-bag {
+  text-align: center;
   width: 50%;
   background: white;
   border: 1px solid #000;
@@ -1266,6 +1268,7 @@ header .lst-util2 .btn-ham::before {
   font-weight: 700;
   font-size: 18px;
   margin-right: 10px;
+  color: black;
 }
 .modal-dimmed .modal-wrap .modal-button .checkout {
   width: 50%;
@@ -1273,5 +1276,7 @@ header .lst-util2 .btn-ham::before {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 18px;
+}
+.modal-dimmed .modal-wrap .modal-button .checkout a {
   color: white;
 }/*# sourceMappingURL=comm.css.map */
