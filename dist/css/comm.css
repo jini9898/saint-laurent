@@ -263,555 +263,6 @@ legend {
   content: "";
 }
 
-.main {
-  height: 100px;
-}
-
-.container {
-  padding: 0 4%;
-}
-
-.wrap {
-  background: white !important;
-}
-
-header {
-  position: fixed;
-  background: #000;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 3;
-}
-header #logo img {
-  height: 21px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-header .inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 70px;
-}
-header .btn-g {
-  height: 40px;
-  width: 70px;
-}
-header .btn-g::before {
-  font-size: 20px;
-  font-family: "Font Awesome 6 free";
-}
-header .lst-util .btn-search::before {
-  content: "\f002";
-  font-family: "Font Awesome 6 free";
-  font-weight: 900;
-  padding: 5px;
-}
-header .lst-util2 .btn-ham::before {
-  content: "\f007";
-  font-family: "Font Awesome 6 free";
-  font-weight: 500;
-  padding: 5px;
-}
-
-.main_image .main_thumnail {
-  padding: 0;
-  background: no-repeat 0 0;
-  background-size: cover;
-  margin-bottom: 40px;
-  text-align: center;
-}
-.main_image .main_thumnail img {
-  max-width: 1010px;
-}
-
-.product-wrap .product-name {
-  font-family: "Libre Baskerville";
-  font-size: 16px;
-  font-weight: 700;
-  padding: 0 20px;
-  margin-bottom: 40px;
-  text-align: center;
-  line-height: normal;
-}
-
-.product-price {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Roboto";
-  font-size: 16px;
-  font-weight: 700;
-  margin-bottom: 40px;
-  padding: 0 20px;
-}
-.product-price::before {
-  content: "";
-  flex-grow: 1;
-  background: rgba(0, 0, 0, 0.35);
-  height: 1px;
-  font-size: 0px;
-  line-height: 0px;
-  margin: 0 10px 0 0;
-}
-.product-price::after {
-  content: "";
-  flex-grow: 1;
-  background: rgba(0, 0, 0, 0.35);
-  height: 1px;
-  font-size: 0px;
-  line-height: 0px;
-  margin: 0 0 0 10px;
-}
-
-.color-options {
-  position: relative;
-  height: 100px;
-  position: relative;
-  margin-bottom: 40px;
-}
-.color-options input[type=radio] {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 0;
-  opacity: 0;
-}
-.color-options .color-picker {
-  display: flex;
-  justify-content: space-between;
-  width: 205px;
-  height: 37px;
-  margin: 0 auto;
-}
-.color-options .color-picker label {
-  position: relative;
-  display: flex;
-  width: 35px;
-  height: 35px;
-  align-items: center;
-  justify-content: center;
-  background: white;
-  border: 1px solid #000;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-}
-.color-options .color-picker label::after {
-  position: absolute;
-  content: " ";
-  bottom: -10px;
-  left: 0;
-  width: 100%;
-  opacity: 0;
-  border-bottom: 2px solid black;
-}
-.color-options .color-picker label.active, .color-options .color-picker label:hover {
-  opacity: 1;
-}
-.color-options .color-picker label.active::after, .color-options .color-picker label:hover::after {
-  content: "";
-  opacity: 1;
-  border-color: rgb(0, 0, 0);
-}
-.color-options .color-picker span {
-  display: block;
-  width: 25px;
-  height: 25px;
-}
-.color-options .color-picker .black {
-  background: #000;
-}
-.color-options .color-picker .blancvintage {
-  background: #faf7ed;
-}
-.color-options .color-picker .storm {
-  background: #4d4d4d;
-}
-.color-options .color-picker .darkbaige {
-  background: #d19e6b;
-}
-.color-options .color-picker-txt {
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 16px;
-  text-align: center;
-}
-
-.size-option {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
-}
-.size-option .size-picker {
-  width: 205px;
-}
-.size-option .size-picker-tab {
-  position: relative;
-  display: flex;
-  height: 24px;
-  justify-content: space-around;
-  align-items: flex-start;
-}
-.size-option .size-picker-tab::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -10px;
-  width: 100%;
-  height: 3px;
-  background: #999;
-}
-.size-option .size {
-  position: relative;
-  display: block;
-  width: 102.5px;
-  font-family: "Libre Baskerville";
-  font-weight: 400;
-  font-size: 16px;
-  text-align: center;
-  color: #999;
-}
-.size-option .on {
-  position: relative;
-  display: block;
-  width: 102.5px;
-  font-family: "Libre Baskerville";
-  font-weight: 700;
-  font-size: 16px;
-  text-align: center;
-}
-.size-option .on::after {
-  position: absolute;
-  content: "";
-  z-index: 1;
-  bottom: -10px;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: #000;
-}
-.size-option .size-delivery {
-  text-align: center;
-  margin-top: 50px;
-}
-
-.cart-button {
-  display: flex;
-  width: 205px;
-  height: 30px;
-  cursor: pointer;
-  background: #000;
-  border: none;
-  margin: 0 auto 40px;
-}
-.cart-button p {
-  font-family: "Roboto";
-  font-weight: 700;
-  font-size: 18px;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  margin: auto;
-}
-
-.product-information-tabs-container {
-  padding: 0 20px;
-  box-sizing: border-box;
-}
-.product-information-tabs-container .product-information-tabs {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.product-information-tabs-container .product-information-tabs::after {
-  position: absolute;
-  content: "";
-  bottom: -10px;
-  left: 0px;
-  right: 0;
-  height: 4px;
-  width: 100%;
-  background: #999;
-}
-.product-information-tabs-container .product-information-tabs .details-tabs {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  font-size: 14px;
-  width: 33.333%;
-  height: 50px;
-  margin: auto;
-  text-align: center;
-  font-weight: 400;
-  font-family: "Libre Baskerville";
-}
-.product-information-tabs-container .product-information-tabs .on {
-  position: relative;
-  font-family: "Libre Baskerville";
-  font-size: 16px;
-  font-weight: 700;
-}
-.product-information-tabs-container .product-information-tabs .on::after {
-  content: "";
-  z-index: 1;
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: #000;
-}
-.product-information-tabs-container .product-information-tabs-panel {
-  display: flex;
-  justify-content: center;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 14px;
-  text-align: center;
-  margin: 30px 20px 0;
-  line-height: 120%;
-}
-
-.de-image-resource {
-  margin-top: 40px;
-}
-.de-image-resource .de-image-tab .de-image > img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  margin-bottom: 15px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.de-image-resource .de-image-tab .details-1 > img:last-child {
-  margin: 0;
-}
-
-.product-information-item-list .item-list-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Libre Baskerville";
-  font-size: 18px;
-  font-weight: 700;
-  margin: auto 0px;
-  padding: 36px 20px 0;
-}
-.product-information-item-list .item-list-header::before {
-  content: "";
-  flex-grow: 1;
-  background: rgba(0, 0, 0, 0.35);
-  height: 1px;
-  font-size: 0px;
-  line-height: 0px;
-  margin: 0 10px 0 0;
-}
-.product-information-item-list .item-list-header::after {
-  content: "";
-  flex-grow: 1;
-  background: rgba(0, 0, 0, 0.35);
-  height: 1px;
-  font-size: 0px;
-  line-height: 0px;
-  margin: 0 0 0 10px;
-}
-.product-information-item-list .item-list {
-  margin-top: 30px;
-  padding: 0 20px;
-}
-.product-information-item-list .item-list .item-list-txt {
-  font-family: "Roboto";
-  font-size: 14px;
-  font-weight: 400;
-  text-align: center;
-}
-
-.recommendations-carousel-wrap .recommendations-carousel-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Libre Baskerville";
-  font-size: 18px;
-  font-weight: 700;
-  margin: auto 0px;
-  padding: 36px 20px 0;
-}
-.recommendations-carousel-wrap .recommendations-carousel-header::before {
-  content: "";
-  flex-grow: 1;
-  background: rgba(0, 0, 0, 0.35);
-  height: 1px;
-  font-size: 0px;
-  line-height: 0px;
-  margin: 0 10px 0 0;
-}
-.recommendations-carousel-wrap .recommendations-carousel-header::after {
-  content: "";
-  flex-grow: 1;
-  background: rgba(0, 0, 0, 0.35);
-  height: 1px;
-  font-size: 0px;
-  line-height: 0px;
-  margin: 0 0 0 10px;
-}
-
-.swiper-wrapper a {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.swiper {
-  margin-top: 30px;
-  padding: 0 20px;
-  text-align: center;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.recently-view-carousel-wrap .recently-view-carousel-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Libre Baskerville";
-  font-size: 18px;
-  font-weight: 700;
-  margin: auto 0px;
-  padding: 36px 20px 0;
-}
-.recently-view-carousel-wrap .recently-view-carousel-header::before {
-  content: "";
-  flex-grow: 1;
-  background: rgba(0, 0, 0, 0.35);
-  height: 1px;
-  font-size: 0px;
-  line-height: 0px;
-  margin: 0 10px 0 0;
-}
-.recently-view-carousel-wrap .recently-view-carousel-header::after {
-  content: "";
-  flex-grow: 1;
-  background: rgba(0, 0, 0, 0.35);
-  height: 1px;
-  font-size: 0px;
-  line-height: 0px;
-  margin: 0 0 0 10px;
-}
-
-.modal-dimmed {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 5000;
-  background: rgba(0, 0, 0, 0.5);
-}
-.modal-dimmed .modal-wrap {
-  width: 100%;
-  margin-top: 580px;
-  padding: 0 20px 15px;
-  background: #ffffff;
-  border-radius: 10px 10px 0 0;
-}
-.modal-dimmed .modal-wrap .modal-head {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid #000;
-}
-.modal-dimmed .modal-wrap .modal-head h3 {
-  font-family: "Libre Baskerville";
-  font-weight: 700;
-  font-size: 16px;
-  padding: 15px 0;
-}
-.modal-dimmed .modal-wrap .modal-main {
-  display: flex;
-  margin: 15px 0;
-  border-bottom: 1px solid #000;
-}
-.modal-dimmed .modal-wrap .modal-main img {
-  width: 110px;
-  height: 160px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  margin: 0 15px 15px 0;
-}
-.modal-dimmed .modal-wrap .modal-main .modal-txt {
-  margin-bottom: 10px;
-}
-.modal-dimmed .modal-wrap .modal-main .modal-element-title li:last-child {
-  margin: 0;
-}
-.modal-dimmed .modal-wrap .modal-main .modal1,
-.modal-dimmed .modal-wrap .modal-main .modal2 {
-  font-family: "Roboto";
-  font-weight: 700;
-  font-size: 14px;
-}
-.modal-dimmed .modal-wrap .modal-main .modal3,
-.modal-dimmed .modal-wrap .modal-main .modal4 {
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 14px;
-}
-.modal-dimmed .modal-wrap .modal-button {
-  display: flex;
-}
-.modal-dimmed .modal-wrap .modal-button button {
-  display: block;
-  width: 160px;
-  height: 45px;
-}
-.modal-dimmed .modal-wrap .modal-button .shopping-bag {
-  width: 50%;
-  background: white;
-  border: 1px solid #000;
-  font-family: "Roboto";
-  font-weight: 700;
-  font-size: 18px;
-  margin-right: 10px;
-}
-.modal-dimmed .modal-wrap .modal-button .checkout {
-  width: 50%;
-  background: #000;
-  font-family: "Roboto";
-  font-weight: 700;
-  font-size: 18px;
-  color: white;
-}
-
 .container {
   padding: 0 30px;
   position: relative;
@@ -1270,4 +721,557 @@ header .lst-util2 .btn-ham::before {
   100% {
     margin-left: -1600px;
   }
+}
+
+.main {
+  height: 100px;
+}
+
+.wrap-item_view {
+  background: white;
+}
+
+.container {
+  padding: 0 4%;
+}
+
+header {
+  position: fixed;
+  background: #000;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+header #logo img {
+  height: 21px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+header .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+header .btn-g {
+  height: 40px;
+  width: 70px;
+}
+header .btn-g::before {
+  font-size: 20px;
+  font-family: "Font Awesome 6 free";
+}
+header .lst-util .btn-search::before {
+  content: "\f002";
+  font-family: "Font Awesome 6 free";
+  font-weight: 900;
+  padding: 5px;
+}
+header .lst-util2 .btn-ham::before {
+  content: "\f007";
+  font-family: "Font Awesome 6 free";
+  font-weight: 500;
+  padding: 5px;
+}
+
+.main_image .main_thumnail {
+  padding: 0;
+  background: no-repeat 0 0;
+  background-size: cover;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.main_image .main_thumnail img {
+  max-width: 1010px;
+}
+
+.product-wrap .product-name {
+  font-family: "Libre Baskerville";
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0 20px;
+  margin-bottom: 40px;
+  text-align: center;
+  line-height: normal;
+}
+
+.product-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  padding: 0 20px;
+}
+.product-price::before {
+  content: "";
+  flex-grow: 1;
+  background: rgba(0, 0, 0, 0.35);
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0 10px 0 0;
+}
+.product-price::after {
+  content: "";
+  flex-grow: 1;
+  background: rgba(0, 0, 0, 0.35);
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0 0 0 10px;
+}
+
+.color-options {
+  position: relative;
+  height: 100px;
+  position: relative;
+  margin-bottom: 40px;
+}
+.color-options input[type=radio] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+.color-options .color-picker {
+  display: flex;
+  justify-content: space-between;
+  width: 205px;
+  height: 37px;
+  margin: 0 auto;
+}
+.color-options .color-picker label {
+  position: relative;
+  display: flex;
+  width: 35px;
+  height: 35px;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border: 1px solid #000;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.color-options .color-picker label::after {
+  position: absolute;
+  content: " ";
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  border-bottom: 2px solid black;
+}
+.color-options .color-picker label.active, .color-options .color-picker label:hover {
+  opacity: 1;
+}
+.color-options .color-picker label.active::after, .color-options .color-picker label:hover::after {
+  content: "";
+  opacity: 1;
+  border-color: rgb(0, 0, 0);
+}
+.color-options .color-picker span {
+  display: block;
+  width: 25px;
+  height: 25px;
+}
+.color-options .color-picker .black {
+  background: #000;
+}
+.color-options .color-picker .blancvintage {
+  background: #faf7ed;
+}
+.color-options .color-picker .storm {
+  background: #4d4d4d;
+}
+.color-options .color-picker .darkbaige {
+  background: #d19e6b;
+}
+.color-options .color-picker-txt {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+}
+
+.size-option {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.size-option .size-picker {
+  width: 205px;
+}
+.size-option .size-picker-tab {
+  position: relative;
+  display: flex;
+  height: 24px;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.size-option .size-picker-tab::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+  width: 100%;
+  height: 3px;
+  background: #999;
+}
+.size-option .size {
+  position: relative;
+  display: block;
+  width: 102.5px;
+  font-family: "Libre Baskerville";
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #999;
+}
+.size-option .on {
+  position: relative;
+  display: block;
+  width: 102.5px;
+  font-family: "Libre Baskerville";
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+}
+.size-option .on::after {
+  position: absolute;
+  content: "";
+  z-index: 1;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #000;
+}
+.size-option .size-delivery {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.cart-button {
+  display: flex;
+  width: 205px;
+  height: 30px;
+  cursor: pointer;
+  background: #000;
+  border: none;
+  margin: 0 auto 40px;
+}
+.cart-button p {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  margin: auto;
+}
+
+.product-information-tabs-container {
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.product-information-tabs-container .product-information-tabs {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product-information-tabs-container .product-information-tabs::after {
+  position: absolute;
+  content: "";
+  bottom: -10px;
+  left: 0px;
+  right: 0;
+  height: 4px;
+  width: 100%;
+  background: #999;
+}
+.product-information-tabs-container .product-information-tabs .details-tabs {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 14px;
+  width: 33.333%;
+  height: 50px;
+  margin: auto;
+  text-align: center;
+  font-weight: 400;
+  font-family: "Libre Baskerville";
+}
+.product-information-tabs-container .product-information-tabs .on {
+  position: relative;
+  font-family: "Libre Baskerville";
+  font-size: 16px;
+  font-weight: 700;
+}
+.product-information-tabs-container .product-information-tabs .on::after {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: #000;
+}
+.product-information-tabs-container .product-information-tabs-panel {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  margin: 30px 20px 0;
+  line-height: 120%;
+}
+
+.de-image-resource {
+  margin-top: 40px;
+}
+.de-image-resource .de-image-tab .de-image > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.de-image-resource .de-image-tab .details-1 > img:last-child {
+  margin: 0;
+}
+
+.product-information-item-list .item-list-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Libre Baskerville";
+  font-size: 18px;
+  font-weight: 700;
+  margin: auto 0px;
+  padding: 36px 20px 0;
+}
+.product-information-item-list .item-list-header::before {
+  content: "";
+  flex-grow: 1;
+  background: rgba(0, 0, 0, 0.35);
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0 10px 0 0;
+}
+.product-information-item-list .item-list-header::after {
+  content: "";
+  flex-grow: 1;
+  background: rgba(0, 0, 0, 0.35);
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0 0 0 10px;
+}
+.product-information-item-list .item-list {
+  margin-top: 30px;
+  padding: 0 20px;
+}
+.product-information-item-list .item-list .item-list-txt {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.recommendations-carousel-wrap .recommendations-carousel-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Libre Baskerville";
+  font-size: 18px;
+  font-weight: 700;
+  margin: auto 0px;
+  padding: 36px 20px 0;
+}
+.recommendations-carousel-wrap .recommendations-carousel-header::before {
+  content: "";
+  flex-grow: 1;
+  background: rgba(0, 0, 0, 0.35);
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0 10px 0 0;
+}
+.recommendations-carousel-wrap .recommendations-carousel-header::after {
+  content: "";
+  flex-grow: 1;
+  background: rgba(0, 0, 0, 0.35);
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0 0 0 10px;
+}
+
+.swiper-wrapper a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiper {
+  margin-top: 30px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.recently-view-carousel-wrap .recently-view-carousel-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Libre Baskerville";
+  font-size: 18px;
+  font-weight: 700;
+  margin: auto 0px;
+  padding: 36px 20px 0;
+}
+.recently-view-carousel-wrap .recently-view-carousel-header::before {
+  content: "";
+  flex-grow: 1;
+  background: rgba(0, 0, 0, 0.35);
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0 10px 0 0;
+}
+.recently-view-carousel-wrap .recently-view-carousel-header::after {
+  content: "";
+  flex-grow: 1;
+  background: rgba(0, 0, 0, 0.35);
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0 0 0 10px;
+}
+
+.modal-dimmed {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5000;
+  background: rgba(0, 0, 0, 0.5);
+  align-items: flex-end;
+}
+.modal-dimmed .modal-wrap {
+  width: 100%;
+  margin-top: 580px;
+  padding: 15px 20px;
+  background: #ffffff;
+  border-radius: 10px 10px 0 0;
+}
+.modal-dimmed .modal-wrap .modal-head {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #000;
+}
+.modal-dimmed .modal-wrap .modal-head h3 {
+  font-family: "Libre Baskerville";
+  font-weight: 700;
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+.modal-dimmed .modal-wrap .modal-head button {
+  margin-top: -7px;
+  width: 40px;
+  height: 40px;
+}
+.modal-dimmed .modal-wrap .modal-main {
+  display: flex;
+  margin: 15px 0;
+  border-bottom: 1px solid #000;
+}
+.modal-dimmed .modal-wrap .modal-main img {
+  width: 110px;
+  height: 160px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0 15px 15px 0;
+}
+.modal-dimmed .modal-wrap .modal-main .modal-txt {
+  margin-bottom: 10px;
+}
+.modal-dimmed .modal-wrap .modal-main .modal-element-title li:last-child {
+  margin: 0;
+}
+.modal-dimmed .modal-wrap .modal-main .modal1,
+.modal-dimmed .modal-wrap .modal-main .modal2 {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+}
+.modal-dimmed .modal-wrap .modal-main .modal3,
+.modal-dimmed .modal-wrap .modal-main .modal4 {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+}
+.modal-dimmed .modal-wrap .modal-button {
+  display: flex;
+}
+.modal-dimmed .modal-wrap .modal-button button {
+  display: block;
+  width: 160px;
+  height: 45px;
+}
+.modal-dimmed .modal-wrap .modal-button .shopping-bag {
+  width: 50%;
+  background: white;
+  border: 1px solid #000;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 18px;
+  margin-right: 10px;
+}
+.modal-dimmed .modal-wrap .modal-button .checkout {
+  width: 50%;
+  background: #000;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 18px;
+  color: white;
 }/*# sourceMappingURL=comm.css.map */
