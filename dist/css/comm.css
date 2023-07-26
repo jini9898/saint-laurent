@@ -1,270 +1,125 @@
 @charset "UTF-8";
-/* reset */
-body,
-div,
-dl,
-dt,
-dd,
-ul,
-ol,
-li,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-pre,
-code,
-form,
-fieldset,
-legend,
-textarea,
-p,
-blockquote,
-th,
-td,
-input,
-select,
-button {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.section-intro {
+  z-index: -5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
-
-fieldset,
-img {
-  border: 0 none;
-}
-
-dl,
-ul,
-ol,
-menu,
-li {
-  list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-q:before, q:after {
-  content: "";
-  content: none;
-}
-
-input,
-select,
-textarea {
-  font-size: 100%;
-  vertical-align: middle;
-}
-
-button {
-  font-size: 100%;
-  vertical-align: middle;
-  border: 0 none;
-  background-color: transparent;
-  cursor: pointer;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-body {
-  -webkit-text-size-adjust: none;
-}
-
-/* 뷰표트 변환시 폰트크기 자동확대 방지 */
-input[type=text], input[type=password], input[type=submit], input[type=search] {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  border-radius: 0;
-}
-input:checked[type=checkbox] {
-  background-color: #666;
-  -webkit-appearance: checkbox;
-     -moz-appearance: checkbox;
-          appearance: checkbox;
-}
-
-button {
-  -webkit-appearance: button;
-     -moz-appearance: button;
-          appearance: button;
-  border-radius: 0;
-}
-
-input[type=button], input[type=submit], input[type=reset], input[type=file] {
-  -webkit-appearance: button;
-     -moz-appearance: button;
-          appearance: button;
-  border-radius: 0;
-}
-input[type=search]::-webkit-search-cancel-button {
-  -webkit-appearance: none;
-}
-
-/* 기본 폰트 설정 */
-/* mobile */
-body {
-  background: #fff;
-  font-size: 14px;
-  line-height: 1.5;
-  font-family: "Noto Sans KR", "Malgun Gothic", "맑은 고딕", sans-serif;
-  color: #000;
-}
-
-/* desktop */
-@media screen and (min-width: 1280px) {
-  body {
-    font-size: 16px;
-  }
-}
-/* color값은 디자인가이드에 맞게사용 */
-a {
-  color: #333;
-  text-decoration: none;
-}
-a:active, a:hover {
-  text-decoration: none;
-}
-
-address,
-caption,
-cite,
-code,
-dfn,
-em,
-var {
-  font-style: normal;
-  font-weight: normal;
-}
-
-hr {
-  display: none;
-}
-
-input[type=password] {
-  font-family: "Malgun Gothic";
-}
-
-/* 웹폰트 사용시 점이 안보임 - 기본 폰트 사용  */
-/* skipnavigation */
-#u-skip {
-  position: relative;
-  z-index: 3000;
-}
-#u-skip a {
-  position: absolute;
-  top: -35px;
-  left: 0;
-  right: 0;
-  display: inline-block;
-  padding: 7px 10px 5px;
-  background: #333;
-  color: #fff;
-  text-decoration: none;
-  text-align: center;
-  opacity: 0;
-}
-#u-skip a:focus {
+.section-intro .main-img {
   top: 0;
-  opacity: 1;
-  z-index: 1000;
-}
-
-/* 이미지 스프라이트 */
-.img-g {
-  display: inline-block;
-  overflow: hidden;
-  background: url(../../images/comm/img-comm.png) no-repeat;
-  vertical-align: top;
-}
-
-/* 이미지 */
-/* global */
-.ir-pm {
+  left: 0;
   display: block;
-  overflow: hidden;
-  font-size: 0px;
-  line-height: 0;
-  text-indent: -9999px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-/* 사용된 이미지내 의미있는 텍스트의 대체텍스트를 제공할때 */
-.ir-wa {
-  display: block;
-  overflow: hidden;
+.contents .part-g img {
+  width: 100%;
+  vertical-align: middle;
+  overflow: clip;
+}
+.contents .main-tg {
+  margin: 40px 40px;
+}
+
+.main-tg {
+  color: #fff;
+  text-align: center;
+  /* roboto-r/body1-18 */
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 21.6px */
+}
+
+/*YOUTUBE VIDEO*/
+.youtube {
   position: relative;
-  z-index: -10;
+  height: 700px;
+  background-color: #000000;
+  overflow: hidden;
+}
+.youtube .youtube__area {
+  width: 1920px;
+  position: absolute;
+  /* 16비율 */
+  left: 50%;
+  margin-left: -960px;
+  /* 9비율 */
+  top: 50%;
+  margin-top: -540px;
+}
+.youtube .youtube__area::before {
+  content: "";
+  display: block;
+  /* 16:9 영상 비율로 요소 크기 만들기! */
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+}
+.youtube .youtube__cover {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
 }
 
-/* 중요한 이미지 대체텍스트로 이미지off시에도 대체 텍스트를 보여주고자 할때 */
-.blind,
-caption,
-legend {
-  overflow: hidden;
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+
+.swiper-slide img {
+  display: block;
+  margin: 0 auto;
+}
+
+.slide-t {
+  color: #ffffff;
+  text-align: center;
+  font-family: Libre Baskerville;
+  font-size: 1.4286rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 80px 60px;
+}
+
+.slide-b {
+  text-decoration: underline;
+  color: #ffffff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 1.0714rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 40px 80px;
+}
+
+#player {
+  width: 100%;
+  height: 100%;
   position: absolute;
-  width: 0;
-  height: 0;
-  line-height: 0;
-  text-indent: -9999px;
-}
-
-/* 대체텍스트가 아닌 접근성을 위한 숨김텍스트를 제공할때 */
-.f_l {
-  float: left;
-}
-
-.f_r {
-  float: right;
-}
-
-.show {
-  display: block;
-}
-
-.hide {
-  display: none;
-}
-
-.tbl {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* 테이블 초기화 */
-.clearfix {
-  display: block;
-  overflow: visible;
-  width: auto;
-  clear: both;
-  zoom: 1;
-}
-.clearfix:after {
-  display: block;
-  visibility: hidden;
-  height: 0;
-  font-size: 0;
-  clear: both;
-  content: "";
-}
-
-.main {
-  height: 100px;
+  top: 0;
+  left: 0;
 }
 
 .main_image .main_thumnail {
@@ -662,238 +517,283 @@ legend {
      object-fit: cover;
 }
 
-.container {
-  padding: 0 30px;
-  position: relative;
+/* reset */
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+textarea,
+p,
+blockquote,
+th,
+td,
+input,
+select,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.wrap {
-  padding: 70px 0 60px;
-  background: #000;
+fieldset,
+img {
+  border: 0 none;
 }
 
-#header {
-  position: fixed;
-  background: #000;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-#header #logo img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-#header .inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 70px;
-}
-#header .btn-g {
-  height: 40px;
-  margin: -10%;
-}
-#header .btn-g::before {
-  font-size: 20px;
-  font-family: "Font Awesome 6 free";
-}
-#header .lst-util .btn-search::before {
-  content: "\f002";
-  font-family: "Font Awesome 6 free";
-  font-weight: 900;
-  padding: 5px;
-  color: #fff;
-}
-#header .lst-util2 .btn-ham::before {
-  content: "\f007";
-  margin: -10%;
-  font-family: "Font Awesome 6 free";
-  font-weight: 500;
-  color: #fff;
+dl,
+ul,
+ol,
+menu,
+li {
+  list-style: none;
 }
 
-#header {
-  position: fixed;
-  background: #000;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 3;
-}
-#header #logo img {
-  height: 21px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-#header .inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 70px;
-}
-#header .btn-g {
-  height: 40px;
-  width: 70px;
-}
-#header .btn-g::before {
-  font-size: 20px;
-  font-family: "Font Awesome 6 free";
-}
-#header .lst-util .btn-search::before {
-  content: "\f002";
-  font-family: "Font Awesome 6 free";
-  font-weight: 900;
-  padding: 5px;
-}
-#header .lst-util2 .btn-ham::before {
-  content: "\f007";
-  font-family: "Font Awesome 6 free";
-  font-weight: 500;
-  padding: 5px;
+blockquote,
+q {
+  quotes: none;
 }
 
-#main img {
-  width: 100%;
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
 }
 
-.sec-introduce .txt-shopping__tit {
-  display: block;
-  margin: 50px 30px 0px;
-  color: #000;
-  /* Libre/h2-bold-24 */
-  font-family: Libre Baskerville;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 120%; /* 28.8px */
+q:before, q:after {
+  content: "";
+  content: none;
 }
-.sec-introduce .txt-shopping__desc {
-  display: block;
-  margin: 20px 30px 50px;
-  color: #000;
-  /* roboto-r/body3-14 */
-  font-family: Roboto;
+
+input,
+select,
+textarea {
+  font-size: 100%;
+  vertical-align: middle;
+}
+
+button {
+  font-size: 100%;
+  vertical-align: middle;
+  border: 0 none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  -webkit-text-size-adjust: none;
+}
+
+/* 뷰표트 변환시 폰트크기 자동확대 방지 */
+input[type=text], input[type=password], input[type=submit], input[type=search] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 0;
+}
+input:checked[type=checkbox] {
+  background-color: #666;
+  -webkit-appearance: checkbox;
+     -moz-appearance: checkbox;
+          appearance: checkbox;
+}
+
+button {
+  -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button;
+  border-radius: 0;
+}
+
+input[type=button], input[type=submit], input[type=reset], input[type=file] {
+  -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button;
+  border-radius: 0;
+}
+input[type=search]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+/* 기본 폰트 설정 */
+/* mobile */
+body {
+  background: #fff;
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 120%; /* 16.8px */
+  line-height: 1.5;
+  font-family: "Noto Sans KR", "Malgun Gothic", "맑은 고딕", sans-serif;
+  color: #000;
 }
 
-.container p {
-  color: var(--black, #000);
-  /* roboto-r/caption-12 */
-  font-family: Roboto;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 120%; /* 14.4px */
+/* desktop */
+@media screen and (min-width: 1280px) {
+  body {
+    font-size: 16px;
+  }
+}
+/* color값은 디자인가이드에 맞게사용 */
+a {
+  color: #333;
+  text-decoration: none;
+}
+a:active, a:hover {
+  text-decoration: none;
 }
 
-#footer {
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+hr {
+  display: none;
+}
+
+input[type=password] {
+  font-family: "Malgun Gothic";
+}
+
+/* 웹폰트 사용시 점이 안보임 - 기본 폰트 사용  */
+/* skipnavigation */
+#u-skip {
   position: relative;
+  z-index: 3000;
 }
-#footer .lst-foot > li {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  border-bottom: 1px solid #000;
-}
-#footer .lst-sns {
-  display: flex;
-}
-#footer .lst-sns a {
-  display: flex;
-  align-items: center;
-  margin: 5px;
-}
-#footer .footerlogo {
-  padding: 20px 20px;
-}
-#footer .footerlogo img {
-  display: block;
-  margin: 0 auto;
-  width: 190px;
-  height: 20px;
-  flex-shrink: 0;
-}
-#footer .material-icons-outlined {
-  display: inline-block;
-  font-size: 0.9rem;
-}
-#footer .iconbox {
-  display: flex;
-  flex-direction: row-reverse;
-  margin-right: 10px;
-}
-#footer .fp {
-  position: relative;
-  padding: 5px;
-}
-#footer .footerbox {
-  position: relative;
-  padding: 5px;
-}
-#footer .ocean {
-  overflow: hidden;
-  width: 100%;
-  border-bottom: 1px solid #000;
-  border-top: 1px solid #000;
-  margin-bottom: 40px;
-  padding: 0 0;
-  height: 50px;
-  top: 50%;
-  margin-top: 80px;
-  transform: translateY(-50%);
-  display: flex;
-  align-items: center;
-}
-#footer .wave {
-  background: url(../../images/logo\ balck.png) repeat-x;
+#u-skip a {
   position: absolute;
-  z-index: 100;
-  top: 13px;
-  width: 6400px;
-  height: 198px;
-  animation: wave 20s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
-  transform: translate3d(0, 0, 0);
-}
-#footer .wave .container {
-  padding: 0 4%;
-}
-#footer .wave body {
-  background: #000;
-}
-#footer .wave .contents {
-  z-index: -5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-#footer .wave .contents .cont-main {
-  display: block;
-}
-#footer .wave .contents .cont-main img {
-  position: absolute;
-  top: 0;
+  top: -35px;
   left: 0;
+  right: 0;
+  display: inline-block;
+  padding: 7px 10px 5px;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  opacity: 0;
+}
+#u-skip a:focus {
+  top: 0;
+  opacity: 1;
+  z-index: 1000;
+}
+
+/* 이미지 스프라이트 */
+.img-g {
+  display: inline-block;
+  overflow: hidden;
+  background: url(../../images/comm/img-comm.png) no-repeat;
+  vertical-align: top;
+}
+
+/* 이미지 */
+/* global */
+.ir-pm {
   display: block;
+  overflow: hidden;
+  font-size: 0px;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+/* 사용된 이미지내 의미있는 텍스트의 대체텍스트를 제공할때 */
+.ir-wa {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  z-index: -10;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
-@keyframes wave {
-  0% {
-    margin-left: 0;
-  }
-  100% {
-    margin-left: -1600px;
-  }
+
+/* 중요한 이미지 대체텍스트로 이미지off시에도 대체 텍스트를 보여주고자 할때 */
+.blind,
+caption,
+legend {
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+/* 대체텍스트가 아닌 접근성을 위한 숨김텍스트를 제공할때 */
+.f_l {
+  float: left;
+}
+
+.f_r {
+  float: right;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.tbl {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 테이블 초기화 */
+.clearfix {
+  display: block;
+  overflow: visible;
+  width: auto;
+  clear: both;
+  zoom: 1;
+}
+.clearfix:after {
+  display: block;
+  visibility: hidden;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  content: "";
+}
+
+.container {
+  padding: 0 4%;
+}
+
+.sec-collect {
+  margin-top: 100px;
+}
+.sec-collect a {
+  display: block;
+}
+
+body {
+  background: #000;
 }
 
 #header {
@@ -919,17 +819,17 @@ legend {
   width: -10%;
 }
 #header .btn-g::before {
-  font-size: 20px;
+  font-size: 1.4286rem;
   font-family: "Font Awesome 6 free";
 }
-#header .lst-util .btn-search::before {
+#header .btn-search::before {
   content: "\f002";
   font-family: "Font Awesome 6 free";
   font-weight: 900;
-  padding: 5px;
+  padding: 0;
   color: #fff;
 }
-#header .lst-util2 .btn-ham::before {
+#header .btn-ham::before {
   content: "\f007";
   margin: -10%;
   font-family: "Font Awesome 6 free";
@@ -937,122 +837,20 @@ legend {
   color: #fff;
 }
 
-.sec-collect .part-g img {
-  width: 100%;
-  vertical-align: middle;
-  overflow-clip-margin: cotent-box;
-  overflow: clip;
-  margin-top: 100px;
-}
-.sec-collect .part-g .main-tg {
-  margin: 40px 40px;
-}
-.sec-collect .main-tg {
-  color: #fff;
-  text-align: center;
-  /* roboto-r/body1-18 */
-  font-family: Roboto;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 120%; /* 21.6px */
-}
-
-/*YOUTUBE VIDEO*/
-.youtube {
-  position: relative;
-  height: 700px;
-  background-color: #333;
-  overflow: hidden;
-}
-.youtube .youtube__area {
-  width: 1920px;
-  position: absolute;
-  /* 16비율 */
-  left: 50%;
-  margin-left: -960px;
-  /* 9비율 */
-  top: 50%;
-  margin-top: -540px;
-}
-.youtube .youtube__area::before {
-  content: "";
-  display: block;
-  /* 16:9 영상 비율로 요소 크기 만들기! */
-  width: 100%;
-  height: 0;
-  padding-top: 56.25%;
-}
-.youtube #player {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.youtube .youtube__cover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-.swiper .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.swiper .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.swiper .slide-t {
-  color: #ffffff;
-  text-align: center;
-  font-family: Libre Baskerville;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  margin: 80px 60px;
-}
-.swiper .slide-b {
-  text-decoration: underline;
-  color: #ffffff;
-  text-align: center;
-  font-family: Roboto;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  margin: 40px 80px;
-}
-
 #footer {
   position: relative;
+  margin-bottom: 60px;
 }
-#footer .lst-foot > li {
+#footer .lst-foot li {
   display: flex;
   justify-content: space-between;
-  position: relative;
   width: 100%;
-  padding: 5px;
-  border-bottom: 1px solid #fff;
-  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
 }
-#footer .lst-foot > li:last-child {
+#footer .lst-foot li .iconbox {
+  border-bottom: 1px solid #000;
+}
+#footer .lst-foot li:last-child {
   border-bottom: 1px solid #000;
 }
 #footer .lst-sns {
@@ -1063,33 +861,50 @@ legend {
   align-items: center;
   margin: 5px;
 }
-#footer .footerlogo {
+#footer li {
+  position: relative;
+  padding: 5px;
+  color: #ffffff;
+  align-items: center;
+}
+#footer li:first-child {
+  position: relative;
+  padding: 5px;
+  color: #ffffff;
+}
+#footer .material-icons-outlined {
+  position: absolute;
+  display: inline-block;
+  margin-top: 4px;
+  font-size: 0.9rem;
+}
+
+.iconbox {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 10px;
+  color: #ffffff;
+}
+
+.ocean {
   padding: 20px 20px;
 }
-#footer .footerlogo img {
+
+.ocean {
   display: block;
   margin: 0 auto;
   width: 190px;
   height: 20px;
   flex-shrink: 0;
 }
-#footer .arrow-icon {
-  display: inline-block;
-  margin-top: 4px;
-  font-size: 0.9rem;
-}
-#footer .iconbox {
-  display: flex;
-  flex-direction: row-reverse;
-  margin-right: 10px;
-  color: #ffffff;
-}
-#footer .footerbox {
+
+.li:first-child {
   position: relative;
   padding: 5px;
   color: #ffffff;
 }
-#footer .ocean {
+
+.ocean {
   overflow: hidden;
   width: 100%;
   border-bottom: 1px solid #ffffff;
@@ -1103,8 +918,9 @@ legend {
   display: flex;
   align-items: center;
 }
-#footer .wave {
-  background: url(../../images/saintlaurent-logo-slide-white.png) repeat-x;
+
+.wave {
+  background: url(../../images/comm/white/saintlaurent-logo-slide-white.png) repeat-x;
   position: absolute;
   z-index: 100;
   top: 13px;
@@ -1113,6 +929,7 @@ legend {
   animation: wave 20s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
   transform: translate3d(0, 0, 0);
 }
+
 @keyframes wave {
   0% {
     margin-left: 0;
