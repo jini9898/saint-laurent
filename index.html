@@ -68,16 +68,18 @@
       <header id="header" class="container">
         <!-- 이너 -->
         <div class="inner">
-          <!-- 로고 -->
-          <h1 id="logo">
-            <a href="#">
-              <img src="./images/comm/black/logo-white.png" alt="logo" />
-            </a>
-          </h1>
           <!-- 유틸1 -->
           <button class="btn-g btn-search">
             <span class="blind">검색</span>
           </button>
+          <!-- 로고 -->
+          <h1 id="logo">
+            <div class="cont-main">
+              <a href="#">
+                <img src="./images/comm/white/logo-white.png" alt="logo" />
+              </a>
+            </div>
+          </h1>
           <!-- 유틸2 -->
           <button class="btn-g btn-ham">
             <span class="blind">마이페이지</span>
@@ -87,60 +89,66 @@
       </header>
       <main id="main">
         <section class="cont-main section-intro">
-            <img src="./images/main/main.jpg" alt="메인 이미지" />        
+          <img
+            class="main-img"
+            src="./images/main/mobile.jpg"
+            alt="메인 페이지"
+          />
         </section>
 
-        <section class="contents sec-collect container">          
-          <div class="part-g part-one sec-collect__item">
-            <li>
-              <a href="#">
-                <img src="./images/main/part1.jpg" alt="WOMEN" />
-              </a>
-              <a href="#">
-                <p class="main-tg main_text1">WOMEN</p>
-              </a>
-            </li>
-          </div>
-          <div class="part-g part-two sec-collect__item">
-            <li>
-              <a href="#">
-                <img src="./images/main/part2.jpg" alt="MAN" />
-              </a>
-              <a href="#">
-                <p class="main-tg main_text2">MAN</p>
-              </a>
-            </li>
-          </div>
-          <div class="part-g part-one sec-collect__item">
-            <li>
-              <a href="#">
-                <img src="./images/main/part3.jpg" alt="ACCESSORY" />
-              </a>
-              <a href="#">
-                <p class="main-tg main_text3">ACCESSORY</p>
-              </a>
-            </li>
-          </div>
-          <div class="part-g part-two sec-collect__item">
-            <li>
-              <a href="#">
-                <img src="./images/main/part4.jpg" alt="INTRODUCE" />
-              </a>
-              <a href="">
-                <p class="main-tg main_text4">INTRODUCE</p>
-              </a>
-            </li>
-          </div>
+        <section class="contents sec-collect container">
+          <ul>
+            <div class="part-g part-one sec-collect__item">
+              <li>
+                <a href="#">
+                  <img src="./images/main/part1.jpg" alt="WOMEN" />
+                </a>
+                <a href="#">
+                  <p class="main-tg main_text1">WOMEN</p>
+                </a>
+              </li>
+            </div>
+            <div class="part-g part-two sec-collect__item">
+              <li>
+                <a href="#">
+                  <img src="./images/main/part2.jpg" alt="MAN" />
+                </a>
+                <a href="#">
+                  <p class="main-tg main_text2">MAN</p>
+                </a>
+              </li>
+            </div>
+            <div class="part-g part-one sec-collect__item">
+              <li>
+                <a href="#">
+                  <img src="./images/main/part3.jpg" alt="ACCESSORY" />
+                </a>
+                <a href="#">
+                  <p class="main-tg main_text3">ACCESSORY</p>
+                </a>
+              </li>
+            </div>
+            <div class="part-g part-two sec-collect__item">
+              <li>
+                <a href="#">
+                  <img src="./images/main/part4.jpg" alt="INTRODUCE" />
+                </a>
+                <a href="">
+                  <p class="main-tg main_text4">INTRODUCE</p>
+                </a>
+              </li>
+            </div>
+          </ul>
         </section>
-        
+
         <section class="youtube sec-introduce">
           <div class="youtube__area">
             <div id="player"></div>
           </div>
           <div class="youtube__cover"></div>
         </section>
-        
-        <div class="swiper FASHIONSHOW swiper-fashionshow">
+
+        <div class="swiper swiper-fashionshow">
           <a href="#">
             <p class="slide-t">FASHIONSHOW</p>
           </a>
@@ -193,10 +201,9 @@
           </a>
         </div>
         <script>
-          var swiper = new Swiper(".FASHIONSHOW", {});
+          var swiper = new Swiper(".swiper-fashionshow", {});
         </script>
       </main>
-      
       <footer id="footer">
         <div class="ocean">
           <div class="wave"></div>
@@ -204,17 +211,28 @@
         <div class="container">
           <ul class="lst-foot foot-info">
             <li>
-                SHIPPING TO : REPUBLIC OF KOREA
-                <span class="material-icons-outlined arrow-icon"> chevron_right </span>
+              <span
+                >SHIPPING TO : REPUBLIC OF KOREA
+                <span class="material-icons-outlined arrow-icon">
+                  chevron_right
+                </span>
+              </span>
             </li>
             <li>
-                LANGUAGE : ENGLISH
-                <span class="material-icons-outlined"> chevron_right </span>
+              <span
+                >LANGUAGE : ENGLISH<span class="material-icons-outlined">
+                  chevron_right
+                </span></span
+              >
             </li>
             <li>
-                SOCIAL MEDIA
-                <span class="material-icons-outlined"> chevron_right </span>
-                <!-- sns 배경으로 넣기 -->
+              <span
+                >SOCIAL MEDIA
+                <span class="material-icons-outlined">
+                  chevron_right
+                </span></span
+              >
+              <!-- sns 배경으로 넣기 -->
               <ul class="lst-sns">
                 <li class="iconbox">
                   <a href="https://www.facebook.com/ysl/?locale=ko_KR">
@@ -251,26 +269,29 @@
               </ul>
             </li>
             <li>
-                NEWSLETTER
-                <span class="material-icons-outlined"> chevron_right </span>            
+              <span
+                >NEWSLETTER<span class="material-icons-outlined">
+                  chevron_right
+                </span></span
+              >
             </li>
             <li>
-                BY CONTACTING CUSTOMER SERVICE, YOU CONSENT TO THE TRANSFER OF
-                YOUR PERSONAL INFORMATION ABROAD.            
+              BY CONTACTING CUSTOMER SERVICE, YOU CONSENT TO THE TRANSFER OF
+              YOUR PERSONAL INFORMATION ABROAD.
             </li>
             <li>
-                <!-- 
+              <!-- 
                   주소 : address , 전화번: tel, 이메일: mailto
                  -->
-                YVES SAINT LAURENT KOREA LLC | BUSINESS REGISTRATION NO.
-                211-88-87468 ADDRESS OF THE COMPANY : 13F, 517, YEONGDONG-DAERO,
-                GANGNAM-GU, SEOUL, REPUBLIC OF KOREA | LEGAL NOTICE NAME OF
-                REPRESENTATIVE AS RECORDED IN THE BUSINESS REGISTRATION
-                CERTIFICATE : HIROFUMI TAMBO TELECOMMUNICATION REGISTRATION
-                NUMBER : 2022-서울강남-06159 ORGANIZATION WHO ISSUED
-                TELECOMMUNICAITON REGISTRATION NUMBER: SEOUL GANGNAM GU OFFICE
-                HOSTING SERVICE : SALESFORCE <br />
-                CUSTOMER CENTER : + 82 2-6105-2228                
+              YVES SAINT LAURENT KOREA LLC | BUSINESS REGISTRATION NO.
+              211-88-87468 ADDRESS OF THE COMPANY : 13F, 517, YEONGDONG-DAERO,
+              GANGNAM-GU, SEOUL, REPUBLIC OF KOREA | LEGAL NOTICE NAME OF
+              REPRESENTATIVE AS RECORDED IN THE BUSINESS REGISTRATION
+              CERTIFICATE : HIROFUMI TAMBO TELECOMMUNICATION REGISTRATION NUMBER
+              : 2022-서울강남-06159 ORGANIZATION WHO ISSUED TELECOMMUNICAITON
+              REGISTRATION NUMBER: SEOUL GANGNAM GU OFFICE HOSTING SERVICE :
+              SALESFORCE <br />
+              CUSTOMER CENTER : + 82 2-6105-2228
             </li>
           </ul>
         </div>
