@@ -642,7 +642,7 @@ header {
       display: flex;
       margin: 15px 0;
       border-bottom: 1px solid #000;
-      img {
+      .modal-img > img {
         width: 110px;
         height: 160px;
         object-fit: cover;
@@ -693,6 +693,305 @@ header {
           color: white;
         }
       }
+    }
+  }
+}
+
+.wrap-cart {
+  background: white;
+}
+
+.cart-wrap {
+  margin-top: 40px;
+}
+.cart-wrap-container {
+  margin-bottom: 40px;
+}
+
+.number-of-product {
+  display: flex;
+  // flex-basis: 100%;
+  justify-content: center;
+  align-items: center;
+  font-family: $fl;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  // padding: 0 20px;
+  color: #000;
+  &::before {
+    content: "";
+    flex-grow: 1;
+    background: $b;
+    height: 1px;
+    font-size: 0px;
+    line-height: 0px;
+    margin: 0 10px 0 0;
+  }
+  &::after {
+    content: "";
+    flex-grow: 1;
+    background: $b;
+    height: 1px;
+    font-size: 0px;
+    line-height: 0px;
+    margin: 0 0 0 10px;
+  }
+}
+
+.shoppingBag-wrap {
+  padding: 0 40px;
+  margin-bottom: 40px;
+  .shopping-basket1 {
+    margin: auto;
+    padding-bottom: 10px;
+    .shoopingbag-image1 {
+      width: 255px;
+      height: 400px;
+      object-fit: cover;
+    }
+    .shoopingbag-image2 {
+      width: 255px;
+      height: 400px;
+      object-fit: cover;
+      object-position: 0% 30%;
+    }
+  }
+  .shoopingbag-sec-wrap {
+    margin: auto;
+    .shoopingbag-txt-sec {
+      margin-bottom: 20px;
+    }
+    .shoopingbag-txt {
+      text-align: center;
+      margin-bottom: 10px;
+      font-family: "Roboto";
+    }
+    .txt1 {
+      font-weight: 700;
+      font-size: 16px;
+    }
+    .txt2 {
+      font-weight: 400;
+      font-size: 14px;
+    }
+    .txt3 {
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .txt4 {
+      position: relative;
+      font-weight: 700;
+      font-size: 16px;
+      &::before {
+        content: "\f068";
+        position: absolute;
+        top: -7px;
+        left: 110px;
+        font-family: "Line Awesome Free";
+        font-weight: 900;
+        font-size: 25px;
+        color: #000;
+        padding-right: 20px;
+      }
+      &::after {
+        content: "\f067";
+        position: absolute;
+        top: -7px;
+        right: 110px;
+        font-family: "Line Awesome Free";
+        font-weight: 900;
+        font-size: 25px;
+        color: #000;
+        margin-left: 20px;
+      }
+    }
+    .txt5 {
+      position: relative;
+      font-weight: 700;
+      font-size: 16px;
+      &::before {
+        content: "\f068";
+        position: absolute;
+        top: -7px;
+        left: 110px;
+        font-family: "Line Awesome Free";
+        font-weight: 900;
+        font-size: 25px;
+        color: #000;
+        padding-right: 20px;
+      }
+      &::after {
+        content: "\f067";
+        position: absolute;
+        top: -7px;
+        right: 110px;
+        font-family: "Line Awesome Free";
+        font-weight: 900;
+        font-size: 25px;
+        color: rgba($b, 0.3);
+        margin-left: 20px;
+      }
+    }
+    .shoopingbag-txt-sec li:last-child {
+      margin: 0;
+    }
+  }
+  .shoppingbag-button {
+    display: flex;
+    width: 100%;
+    height: 30px;
+
+    .edit {
+      width: 50%;
+      margin-right: 10px;
+      background: $b;
+      font-family: "Roboto";
+      font-weight: 700;
+      font-size: 16px;
+    }
+    .remove {
+      width: 50%;
+      background: $b;
+      font-family: "Roboto";
+      font-weight: 700;
+      font-size: 16px;
+    }
+    a {
+      color: $w;
+    }
+  }
+}
+
+.gift-wrapping-wrap {
+  padding-bottom: 40px;
+  .gift-image-wrap {
+    margin-bottom: 20px;
+    height: 250px;
+    width: 100%;
+    .gift-image {
+      height: 250px;
+      object-fit: cover;
+      object-position: 0% 74%;
+    }
+  }
+  .gift-wrapping-txt {
+    text-align: center;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 14px;
+    .gift-wrapping-txt1 {
+      margin-bottom: 20px;
+    }
+  }
+}
+.cart-total-container {
+  border-top: 1px solid #000;
+  padding-bottom: 40px;
+  .cart-total-wrap {
+    padding-top: 40px;
+  }
+  .cart-total1 {
+    display: flex;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    justify-content: space-between;
+    padding-bottom: 20px;
+  }
+  .cart-total2 {
+    display: flex;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 18px;
+    justify-content: space-between;
+    padding-bottom: 40px;
+  }
+  .cart-total-button {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 40px;
+    background: #000;
+    .cart-button-txt {
+      color: white;
+      font-family: "Roboto";
+      font-weight: 700;
+      font-size: 20px;
+    }
+  }
+}
+
+.need-help-container {
+  .need-help-txt {
+    display: flex;
+    // flex-basis: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: $fl;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    // padding: 0 20px;
+    color: #000;
+    &::before {
+      content: "";
+      flex-grow: 1;
+      background: $b;
+      height: 1px;
+      font-size: 0px;
+      line-height: 0px;
+      margin: 0 10px 0 0;
+    }
+    &::after {
+      content: "";
+      flex-grow: 1;
+      background: $b;
+      height: 1px;
+      font-size: 0px;
+      line-height: 0px;
+      margin: 0 0 0 10px;
+    }
+  }
+  .need-help-number {
+    display: block;
+    text-align: center;
+    padding-bottom: 40px;
+    > p {
+      font-family: "Roboto";
+      font-weight: 400;
+      font-size: 14px;
+    }
+    .need-call {
+      position: relative;
+      padding-bottom: 20px;
+      &::before {
+        content: "\f095";
+        position: absolute;
+        top: 0px;
+        left: 122px;
+        rotate: 30deg;
+        font-family: "Line Awesome Free";
+        font-weight: 900;
+        font-size: 24px;
+      }
+    }
+  }
+
+  .need-help-etc {
+    display: flex;
+    justify-content: space-around;
+    .las {
+      font-size: 40px;
+      padding-bottom: 10px;
+    }
+    .help-etc {
+      text-align: center;
+    }
+    .help-txt > p {
+      font-family: "Roboto";
+      font-weight: 700;
+      font-size: 14px;
     }
   }
 }

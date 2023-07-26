@@ -1229,7 +1229,7 @@ header .lst-util2 .btn-ham::before {
   margin: 15px 0;
   border-bottom: 1px solid #000;
 }
-.modal-dimmed .modal-wrap .modal-main img {
+.modal-dimmed .modal-wrap .modal-main .modal-img > img {
   width: 110px;
   height: 160px;
   -o-object-fit: cover;
@@ -1279,4 +1279,302 @@ header .lst-util2 .btn-ham::before {
 }
 .modal-dimmed .modal-wrap .modal-button .checkout a {
   color: white;
+}
+
+.wrap-cart {
+  background: white;
+}
+
+.cart-wrap {
+  margin-top: 40px;
+}
+
+.cart-wrap-container {
+  margin-bottom: 40px;
+}
+
+.number-of-product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Libre Baskerville";
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #000;
+}
+.number-of-product::before {
+  content: "";
+  flex-grow: 1;
+  background: #000;
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0 10px 0 0;
+}
+.number-of-product::after {
+  content: "";
+  flex-grow: 1;
+  background: #000;
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0 0 0 10px;
+}
+
+.shoppingBag-wrap {
+  padding: 0 40px;
+  margin-bottom: 40px;
+}
+.shoppingBag-wrap .shopping-basket1 {
+  margin: auto;
+  padding-bottom: 10px;
+}
+.shoppingBag-wrap .shopping-basket1 .shoopingbag-image1 {
+  width: 255px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.shoppingBag-wrap .shopping-basket1 .shoopingbag-image2 {
+  width: 255px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0% 30%;
+     object-position: 0% 30%;
+}
+.shoppingBag-wrap .shoopingbag-sec-wrap {
+  margin: auto;
+}
+.shoppingBag-wrap .shoopingbag-sec-wrap .shoopingbag-txt-sec {
+  margin-bottom: 20px;
+}
+.shoppingBag-wrap .shoopingbag-sec-wrap .shoopingbag-txt {
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: "Roboto";
+}
+.shoppingBag-wrap .shoopingbag-sec-wrap .txt1 {
+  font-weight: 700;
+  font-size: 16px;
+}
+.shoppingBag-wrap .shoopingbag-sec-wrap .txt2 {
+  font-weight: 400;
+  font-size: 14px;
+}
+.shoppingBag-wrap .shoopingbag-sec-wrap .txt3 {
+  font-weight: 700;
+  font-size: 14px;
+}
+.shoppingBag-wrap .shoopingbag-sec-wrap .txt4 {
+  position: relative;
+  font-weight: 700;
+  font-size: 16px;
+}
+.shoppingBag-wrap .shoopingbag-sec-wrap .txt4::before {
+  content: "\f068";
+  position: absolute;
+  top: -7px;
+  left: 110px;
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+  font-size: 25px;
+  color: #000;
+  padding-right: 20px;
+}
+.shoppingBag-wrap .shoopingbag-sec-wrap .txt4::after {
+  content: "\f067";
+  position: absolute;
+  top: -7px;
+  right: 110px;
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+  font-size: 25px;
+  color: #000;
+  margin-left: 20px;
+}
+.shoppingBag-wrap .shoopingbag-sec-wrap .txt5 {
+  position: relative;
+  font-weight: 700;
+  font-size: 16px;
+}
+.shoppingBag-wrap .shoopingbag-sec-wrap .txt5::before {
+  content: "\f068";
+  position: absolute;
+  top: -7px;
+  left: 110px;
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+  font-size: 25px;
+  color: #000;
+  padding-right: 20px;
+}
+.shoppingBag-wrap .shoopingbag-sec-wrap .txt5::after {
+  content: "\f067";
+  position: absolute;
+  top: -7px;
+  right: 110px;
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.3);
+  margin-left: 20px;
+}
+.shoppingBag-wrap .shoopingbag-sec-wrap .shoopingbag-txt-sec li:last-child {
+  margin: 0;
+}
+.shoppingBag-wrap .shoppingbag-button {
+  display: flex;
+  width: 100%;
+  height: 30px;
+}
+.shoppingBag-wrap .shoppingbag-button .edit {
+  width: 50%;
+  margin-right: 10px;
+  background: #000;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+}
+.shoppingBag-wrap .shoppingbag-button .remove {
+  width: 50%;
+  background: #000;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+}
+.shoppingBag-wrap .shoppingbag-button a {
+  color: #fff;
+}
+
+.gift-wrapping-wrap {
+  padding-bottom: 40px;
+}
+.gift-wrapping-wrap .gift-image-wrap {
+  margin-bottom: 20px;
+  height: 250px;
+  width: 100%;
+}
+.gift-wrapping-wrap .gift-image-wrap .gift-image {
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0% 74%;
+     object-position: 0% 74%;
+}
+.gift-wrapping-wrap .gift-wrapping-txt {
+  text-align: center;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+}
+.gift-wrapping-wrap .gift-wrapping-txt .gift-wrapping-txt1 {
+  margin-bottom: 20px;
+}
+
+.cart-total-container {
+  border-top: 1px solid #000;
+  padding-bottom: 40px;
+}
+.cart-total-container .cart-total-wrap {
+  padding-top: 40px;
+}
+.cart-total-container .cart-total1 {
+  display: flex;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.cart-total-container .cart-total2 {
+  display: flex;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 18px;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+.cart-total-container .cart-total-button {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 40px;
+  background: #000;
+}
+.cart-total-container .cart-total-button .cart-button-txt {
+  color: white;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.need-help-container .need-help-txt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Libre Baskerville";
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #000;
+}
+.need-help-container .need-help-txt::before {
+  content: "";
+  flex-grow: 1;
+  background: #000;
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0 10px 0 0;
+}
+.need-help-container .need-help-txt::after {
+  content: "";
+  flex-grow: 1;
+  background: #000;
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0 0 0 10px;
+}
+.need-help-container .need-help-number {
+  display: block;
+  text-align: center;
+  padding-bottom: 40px;
+}
+.need-help-container .need-help-number > p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+}
+.need-help-container .need-help-number .need-call {
+  position: relative;
+  padding-bottom: 20px;
+}
+.need-help-container .need-help-number .need-call::before {
+  content: "\f095";
+  position: absolute;
+  top: 0px;
+  left: 122px;
+  rotate: 30deg;
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+  font-size: 24px;
+}
+.need-help-container .need-help-etc {
+  display: flex;
+  justify-content: space-around;
+}
+.need-help-container .need-help-etc .las {
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+.need-help-container .need-help-etc .help-etc {
+  text-align: center;
+}
+.need-help-container .need-help-etc .help-txt > p {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
 }/*# sourceMappingURL=comm.css.map */
