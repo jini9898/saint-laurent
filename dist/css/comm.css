@@ -264,7 +264,7 @@ legend {
 }
 
 .container {
-  padding: 0 30px;
+  padding: 0 4%;
   position: relative;
 }
 
@@ -315,46 +315,6 @@ legend {
   color: #fff;
 }
 
-#header {
-  position: fixed;
-  background: #000;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 3;
-}
-#header #logo img {
-  height: 21px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-#header .inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 70px;
-}
-#header .btn-g {
-  height: 40px;
-  width: 70px;
-}
-#header .btn-g::before {
-  font-size: 20px;
-  font-family: "Font Awesome 6 free";
-}
-#header .lst-util .btn-search::before {
-  content: "\f002";
-  font-family: "Font Awesome 6 free";
-  font-weight: 900;
-  padding: 5px;
-}
-#header .lst-util2 .btn-ham::before {
-  content: "\f007";
-  font-family: "Font Awesome 6 free";
-  font-weight: 500;
-  padding: 5px;
-}
-
 #main img {
   width: 100%;
 }
@@ -390,111 +350,6 @@ legend {
   font-style: normal;
   font-weight: 400;
   line-height: 120%; /* 14.4px */
-}
-
-#footer {
-  position: relative;
-}
-#footer .lst-foot > li {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  border-bottom: 1px solid #000;
-}
-#footer .lst-sns {
-  display: flex;
-}
-#footer .lst-sns a {
-  display: flex;
-  align-items: center;
-  margin: 5px;
-}
-#footer .footerlogo {
-  padding: 20px 20px;
-}
-#footer .footerlogo img {
-  display: block;
-  margin: 0 auto;
-  width: 190px;
-  height: 20px;
-  flex-shrink: 0;
-}
-#footer .material-icons-outlined {
-  display: inline-block;
-  font-size: 0.9rem;
-}
-#footer .iconbox {
-  display: flex;
-  flex-direction: row-reverse;
-  margin-right: 10px;
-}
-#footer .fp {
-  position: relative;
-  padding: 5px;
-}
-#footer .footerbox {
-  position: relative;
-  padding: 5px;
-}
-#footer .ocean {
-  overflow: hidden;
-  width: 100%;
-  border-bottom: 1px solid #000;
-  border-top: 1px solid #000;
-  margin-bottom: 40px;
-  padding: 0 0;
-  height: 50px;
-  top: 50%;
-  margin-top: 80px;
-  transform: translateY(-50%);
-  display: flex;
-  align-items: center;
-}
-#footer .wave {
-  background: url(../../images/logo\ balck.png) repeat-x;
-  position: absolute;
-  z-index: 100;
-  top: 13px;
-  width: 6400px;
-  height: 198px;
-  animation: wave 20s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
-  transform: translate3d(0, 0, 0);
-}
-#footer .wave .container {
-  padding: 0 4%;
-}
-#footer .wave body {
-  background: #000;
-}
-#footer .wave .contents {
-  z-index: -5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-#footer .wave .contents .cont-main {
-  display: block;
-}
-#footer .wave .contents .cont-main img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-@keyframes wave {
-  0% {
-    margin-left: 0;
-  }
-  100% {
-    margin-left: -1600px;
-  }
 }
 
 #header {
@@ -643,17 +498,18 @@ legend {
 
 #footer {
   position: relative;
+  margin-bottom: 60px;
 }
-#footer .lst-foot > li {
+#footer .lst-foot li {
   display: flex;
   justify-content: space-between;
-  position: relative;
   width: 100%;
-  padding: 5px;
-  border-bottom: 1px solid #fff;
-  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
 }
-#footer .lst-foot > li:last-child {
+#footer .lst-foot li .iconbox {
+  border-bottom: 1px solid #000;
+}
+#footer .lst-foot li:last-child {
   border-bottom: 1px solid #000;
 }
 #footer .lst-sns {
@@ -664,33 +520,50 @@ legend {
   align-items: center;
   margin: 5px;
 }
-#footer .footerlogo {
+#footer li {
+  position: relative;
+  padding: 5px;
+  color: #ffffff;
+  align-items: center;
+}
+#footer li:first-child {
+  position: relative;
+  padding: 5px;
+  color: #ffffff;
+}
+#footer .material-icons-outlined {
+  position: absolute;
+  display: inline-block;
+  margin-top: 4px;
+  font-size: 0.9rem;
+}
+
+.iconbox {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 10px;
+  color: #ffffff;
+}
+
+.ocean {
   padding: 20px 20px;
 }
-#footer .footerlogo img {
+
+.ocean {
   display: block;
   margin: 0 auto;
   width: 190px;
   height: 20px;
   flex-shrink: 0;
 }
-#footer .arrow-icon {
-  display: inline-block;
-  margin-top: 4px;
-  font-size: 0.9rem;
-}
-#footer .iconbox {
-  display: flex;
-  flex-direction: row-reverse;
-  margin-right: 10px;
-  color: #ffffff;
-}
-#footer .footerbox {
+
+.li:first-child {
   position: relative;
   padding: 5px;
   color: #ffffff;
 }
-#footer .ocean {
+
+.ocean {
   overflow: hidden;
   width: 100%;
   border-bottom: 1px solid #ffffff;
@@ -704,8 +577,9 @@ legend {
   display: flex;
   align-items: center;
 }
-#footer .wave {
-  background: url(../../images/saintlaurent-logo-slide-white.png) repeat-x;
+
+.wave {
+  background: url(../../images/comm/white/saintlaurent-logo-slide-white.png) repeat-x;
   position: absolute;
   z-index: 100;
   top: 13px;
@@ -714,6 +588,7 @@ legend {
   animation: wave 20s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
   transform: translate3d(0, 0, 0);
 }
+
 @keyframes wave {
   0% {
     margin-left: 0;
@@ -722,7 +597,6 @@ legend {
     margin-left: -1600px;
   }
 }
-
 .main {
   height: 100px;
 }
@@ -1186,12 +1060,8 @@ header .lst-util2 .btn-ham::before {
   margin: 0 0 0 10px;
 }
 
-.modal {
-  display: none;
-}
-
 .modal-dimmed {
-  display: flex;
+  display: none;
   position: fixed;
   top: 0;
   left: 0;

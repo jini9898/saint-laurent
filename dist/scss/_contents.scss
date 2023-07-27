@@ -601,11 +601,12 @@ header {
   }
 }
 .modal {
-  display: none;
+  // display: none;
   // visibility: hidden;
 }
 .modal-dimmed {
-  display: flex;
+  // display: flex;
+  display: none;
   position: fixed;
   top: 0;
   left: 0;

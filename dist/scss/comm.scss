@@ -6,7 +6,7 @@
 
 //공통
 .container {
-  padding: 0 $mz;
+  padding: 0 4%;
   position: relative;
 }
 
@@ -16,73 +16,46 @@
   background: #000;
 }
 #header {
-  position: fixed;
-  background: #000;
+  display: flex;
+  // position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
   top: 0;
   left: 0;
-  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  box-sizing: border-box;
 
-  #logo img {
+  #logo {
     position: absolute;
+    // z-index: 1100;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-
-  .inner {
-    // position: fixed;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 70px;
-  }
-  .btn-g {
-    height: 40px;
-    margin: -10%;
-    &::before {
-      font-size: 20px;
-      font-family: "Font Awesome 6 free";
-    }
-  }
-  .lst-util {
-    .btn-search::before {
-      content: "\f002";
-      font-family: "Font Awesome 6 free";
-      font-weight: 900;
-      padding: 5px;
-      color: #fff;
-    }
-  }
-  .lst-util2 {
-    .btn-ham::before {
-      content: "\f007";
-      margin: -10%;
-      font-family: "Font Awesome 6 free";
-      font-weight: 500;
-      color: #fff;
-    }
-  }
-}
-
-#header {
-  position: fixed;
-  background: #000;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 3;
 
   #logo img {
     height: 21px;
     object-fit: contain;
   }
 
+  .material-symbols-outlined {
+    // position: absolute;
+    display: inline-block;
+    font-size: 30px;
+  }
+
   .inner {
     // position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 70px;
+    width: 100%;
   }
   .btn-g {
     height: 40px;
@@ -92,24 +65,102 @@
       font-family: "Font Awesome 6 free";
     }
   }
-  .lst-util {
-    .btn-search::before {
-      content: "\f002";
-      font-family: "Font Awesome 6 free";
-      font-weight: 900;
-      padding: 5px;
+}
+.gnb-wrap {
+  .input-burger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    &:checked {
+      // input이 선택됬을 때
+      & + label {
+        .bar {
+          background: $w;
+          &:nth-child(2) {
+            transform: rotate(45deg) translate(4px, 4px);
+          }
+          &:nth-child(3) {
+            // display: none;
+            opacity: 0;
+          }
+          &:nth-child(4) {
+            transform: rotate(-45deg) translate(6px, -6px);
+          }
+        }
+      }
+      & ~ #gnb {
+        left: 0;
+      }
     }
   }
-  .lst-util2 {
-    .btn-ham::before {
-      content: "\f007";
-      font-family: "Font Awesome 6 free";
-      font-weight: 500;
-      padding: 5px;
+
+  .label-burger {
+    cursor: pointer;
+    position: relative;
+    z-index: 1100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40px;
+    height: $headerHight;
+    .bar {
+      display: block;
+      width: 26px;
+      height: 2px;
+      background: $txtDefault;
+      transition: all 0.3s;
+      // display none, block은 트렌지션 적용x
+      // 2개 이상 적용시 all -> 위치값 다시 적용
+    }
+    span {
+      &:nth-child(3) {
+        margin: 5px 0;
+      }
+    }
+  }
+  #gnb {
+    // display: none;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    bottom: 0;
+    width: 100%;
+    padding: 30px;
+    background: $b;
+    // rgba(0, 0, 0, 0.8)
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 125px;
+    transition: right 0.3s;
+    .gnb-logo img {
+      width: 250px;
+      margin-bottom: 70px;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+      }
+    }
+
+    li {
+      color: #ffffff;
+      line-height: 30px;
+    }
+    a {
+      color: $w;
     }
   }
 }
-
 #main {
   img {
     width: 100%;
@@ -153,204 +204,7 @@
     line-height: 120%; /* 14.4px */
   }
 }
-#footer {
-  position: relative;
 
-  .lst-foot {
-    > li {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-      border-bottom: 1px solid #000;
-    }
-  }
-  .lst-sns {
-    display: flex;
-    a {
-      display: flex;
-      align-items: center;
-      margin: 5px;
-    }
-  }
-
-  .footerlogo {
-    padding: 20px 20px;
-  }
-  .footerlogo img {
-    display: block;
-    margin: 0 auto;
-    width: 190px;
-    height: 20px;
-    flex-shrink: 0;
-  }
-  .material-icons-outlined {
-    display: inline-block;
-    font-size: 0.9rem;
-  }
-  .iconbox {
-    display: flex;
-    flex-direction: row-reverse;
-    margin-right: 10px;
-  }
-  .fp {
-    position: relative;
-    padding: 5px;
-  }
-  .footerbox {
-    position: relative;
-    padding: 5px;
-  }
-  .ocean {
-    overflow: hidden;
-    width: 100%;
-    border-bottom: 1px solid #000;
-    border-top: 1px solid #000;
-    margin-bottom: 40px;
-    padding: 0 0;
-    height: 50px;
-    top: 50%;
-    margin-top: 80px;
-    transform: translateY(-50%);
-    display: flex;
-    align-items: center;
-  }
-  .wave {
-    background: url(../../images/logo\ balck.png) repeat-x;
-    // background-size: auto 100%;
-    position: absolute;
-    z-index: 100;
-    top: 13px;
-    width: 6400px;
-    height: 198px;
-
-    // @charset "UTF-8";
-    // @import "fonts", "reset", "main", "contents";
-
-    // .wrap {
-    //   width: 1200px;
-    //   margin: 0 auto;
-
-    //   header {
-    //     height: 100px;
-    //     background: rgb(255, 241, 216);
-    //   }
-    // }
-
-    // .wrap .slide {
-    //   height: 300px;
-    //   background: blue;
-    // }
-
-    // @import  "main", "contents";
-
-    // comm.scss -
-    // 공통요소 : 헤더, 풋터, 버튼, 아이콘, 박스
-
-    // 공통
-    .container {
-      padding: 0 4%;
-    }
-    body {
-      background: #000;
-    }
-
-    // .wrap {
-    //   // position: relative;
-    // }
-    // // .mainimg {
-    // //   position: absolute;
-    // //   top: 0px;
-    // //   z-index: -1;
-    // //   height: 1176px;
-    // //   width: 100%;
-    // //   // background-image: 50% 50% / cover no-repeat;
-    // //   .main-1 {
-    // //     width: 100%;
-    // //     margin-top: 50px;
-    // //   }
-    // // }
-
-    .contents {
-      z-index: -5;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: 100vh;
-      overflow: hidden;
-      .cont-main {
-        display: block;
-      }
-      .cont-main img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-    }
-
-    animation: wave 20s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
-    transform: translate3d(0, 0, 0);
-  }
-
-  @keyframes wave {
-    0% {
-      margin-left: 0;
-    }
-    100% {
-      margin-left: -1600px;
-    }
-  }
-}
-
-#header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  #logo img {
-    height: 21px;
-    object-fit: contain;
-  }
-
-  .inner {
-    // position: fixed;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 70px;
-  }
-  .btn-g {
-    height: 40px;
-    width: -10%;
-    &::before {
-      font-size: 20px;
-      font-family: "Font Awesome 6 free";
-    }
-  }
-  .lst-util {
-    .btn-search::before {
-      content: "\f002";
-      font-family: "Font Awesome 6 free";
-      font-weight: 900;
-      padding: 5px;
-      color: #fff;
-    }
-  }
-  .lst-util2 {
-    .btn-ham::before {
-      content: "\f007";
-      margin: -10%;
-      font-family: "Font Awesome 6 free";
-      font-weight: 500;
-      color: #fff;
-    }
-  }
-}
 .sec-collect {
   .part-g {
     img {
@@ -466,17 +320,18 @@
 }
 #footer {
   position: relative;
+  margin-bottom: 60px;
   .lst-foot {
-    > li {
+    li {
       display: flex;
       justify-content: space-between;
-      position: relative;
       width: 100%;
-      padding: 5px;
-      border-bottom: 1px solid #fff;
-      color: #ffffff;
+      border-bottom: 1px solid #ffffff;
+      .iconbox {
+        border-bottom: 1px solid #000;
+      }
     }
-    > li:last-child {
+    li:last-child {
       border-bottom: 1px solid #000;
     }
   }
@@ -488,67 +343,77 @@
       margin: 5px;
     }
   }
-
-  .footerlogo {
-    padding: 20px 20px;
-  }
-  .footerlogo img {
-    display: block;
-    margin: 0 auto;
-    width: 190px;
-    height: 20px;
-    flex-shrink: 0;
-  }
-  .arrow-icon {
-    display: inline-block;
-    margin-top: 4px;
-    font-size: 0.9rem;
-  }
-  .iconbox {
-    display: flex;
-    flex-direction: row-reverse;
-    margin-right: 10px;
+  li {
+    position: relative;
+    padding: 5px;
     color: #ffffff;
+    align-items: center;
   }
-
-  .footerbox {
+  li:first-child {
     position: relative;
     padding: 5px;
     color: #ffffff;
   }
-  .ocean {
-    overflow: hidden;
-    width: 100%;
-    border-bottom: 1px solid #ffffff;
-    border-top: 1px solid #ffffff;
-    margin-bottom: 40px;
-    padding: 0 0;
-    height: 50px;
-    top: 50%;
-    margin-top: 80px;
-    transform: translateY(-50%);
-    display: flex;
-    align-items: center;
-  }
-  .wave {
-    background: url(../../images/saintlaurent-logo-slide-white.png) repeat-x;
-    // background-size: auto 100%;
+  .material-icons-outlined {
     position: absolute;
-    z-index: 100;
-    top: 13px;
-    width: 6400px;
-    height: 198px;
-    animation: wave 20s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
-    transform: translate3d(0, 0, 0);
+    display: inline-block;
+    margin-top: 4px;
+    font-size: 0.9rem;
   }
-
-  @keyframes wave {
-    0% {
-      margin-left: 0;
-    }
-    100% {
-      margin-left: -1600px;
-    }
+}
+.iconbox {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 10px;
+  color: #ffffff;
+}
+.ocean {
+  padding: 20px 20px;
+}
+.ocean {
+  display: block;
+  margin: 0 auto;
+  width: 190px;
+  height: 20px;
+  flex-shrink: 0;
+}
+.li:first-child {
+  position: relative;
+  padding: 5px;
+  color: #ffffff;
+}
+.ocean {
+  overflow: hidden;
+  width: 100%;
+  border-bottom: 1px solid #ffffff;
+  border-top: 1px solid #ffffff;
+  margin-bottom: 40px;
+  padding: 0 0;
+  height: 50px;
+  top: 50%;
+  margin-top: 80px;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+}
+.wave {
+  background: url(../../images/comm/white/saintlaurent-logo-slide-white.png)
+    repeat-x;
+  // background-size: auto 100%;
+  position: absolute;
+  z-index: 100;
+  top: 13px;
+  width: 6400px;
+  height: 198px;
+  animation: wave 20s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
   }
 }
 
