@@ -1,67 +1,8 @@
-// 공통
-.wrap-item_view {
-  background: white;
-}
-.container {
-  padding: 0 $mz;
-}
-
-header {
-  position: fixed;
-  background: #000;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 3;
-
-  #logo img {
-    height: 21px;
-    object-fit: contain;
-  }
-
-  .inner {
-    // position: fixed;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 70px;
-  }
-  .btn-g {
-    height: 40px;
-    width: 70px;
-    &::before {
-      font-size: 20px;
-      font-family: "Font Awesome 6 free";
-    }
-  }
-  .lst-util {
-    .btn-search::before {
-      content: "\f002";
-      font-family: "Font Awesome 6 free";
-      font-weight: 900;
-      padding: 5px;
-    }
-  }
-  .lst-util2 {
-    .btn-ham::before {
-      content: "\f007";
-      font-family: "Font Awesome 6 free";
-      font-weight: 500;
-      padding: 5px;
-    }
-  }
-}
-
 .main_image {
+  margin-bottom: 40px;
   .main_thumnail {
-    padding: 0;
-    background: no-repeat 0 0;
-    background-size: cover;
-    margin-bottom: 40px;
-    text-align: center;
-    img {
-      max-width: 1010px;
-    }
+    width: 80%;
+    margin: auto;
   }
 }
 
@@ -81,7 +22,7 @@ header {
   // flex-basis: 100%;
   justify-content: center;
   align-items: center;
-  font-family: "Roboto";
+  font-family: $ro;
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 40px;
@@ -105,66 +46,6 @@ header {
     margin: 0 0 0 10px;
   }
 }
-
-// .productSwatches-container {
-//   display: flex;
-//   justify-content: space-between;
-//   margin: auto;
-//   width: 205px;
-//   height: 50px;
-//   .productSwatches {
-//     position: relative;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     width: 35px;
-//     height: 35px;
-//     background: white;
-//     border: 1px solid #000;
-//   }
-//   .black {
-//     width: 25px;
-//     height: 25px;
-//     background: #000;
-//   }
-
-//   .white {
-//     width: 25px;
-//     height: 25px;
-//     background: #faf7ed;
-//   }
-
-//   .storm {
-//     width: 25px;
-//     height: 25px;
-//     background: #4d4d4d;
-//   }
-
-//   .baige {
-//     width: 25px;
-//     height: 25px;
-//     background: #d19e6b;
-//   }
-//   .color1::after {
-//     content: "";
-//     position: absolute;
-//     bottom: -10px;
-//     left: 0;
-//     width: 100%;
-//     height: 1.5px;
-//     background: #000;
-//   }
-// }
-
-// .productSwatches-label {
-//   p {
-//     padding: 32px 0 36px;
-//     font-family: "Roboto";
-//     font-weight: 400;
-//     font-size: 16px;
-//     text-align: center;
-//   }
-// }
 
 .color-options {
   position: relative;
@@ -242,69 +123,12 @@ header {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    font-family: "Roboto";
+    font-family: $ro;
     font-weight: 400;
     font-size: 16px;
     text-align: center;
   }
 }
-
-// .size-container {
-//   width: 205px;
-//   margin: 0 auto 34px;
-//   .size-frame {
-//     position: relative;
-//     display: flex;
-//     justify-content: space-around;
-//     height: 30px;
-//     margin-bottom: 36px;
-//     &::after {
-//       content: "     ";
-//       position: absolute;
-//       bottom: 0;
-//       left: 0;
-//       width: 205px;
-//       background: #000;
-//       border: 2px solid #999;
-//     }
-//     .s-size {
-//       display: inline-block;
-//       font-family: "Libre Baskerville";
-//       font-weight: 400;
-//       font-size: 16px;
-//       text-align: center;
-//       color: #999;
-//     }
-//     .m-size {
-//       display: inline-block;
-//       font-family: "Libre Baskerville";
-//       font-weight: 700;
-//       font-size: 16px;
-//       text-align: center;
-//     }
-//     .on::after {
-//       content: "";
-//       position: absolute;
-//       bottom: 0;
-//       right: -3px;
-//       z-index: 2;
-//       width: 105px;
-//       background: #000;
-//       border: 2px solid #000;
-//     }
-//   }
-// }
-// .delivery-information {
-//   margin: 0 auto 34px;
-//   p {
-//     font-family: "Roboto";
-//     font-weight: 400;
-//     font-size: 14px;
-//     text-align: center;
-//     line-height: 1.5;
-//     justify-content: center;
-//   }
-// }
 
 .size-option {
   display: flex;
@@ -364,7 +188,7 @@ header {
     margin-top: 50px;
     .size-delivery-txt {
       display: block;
-      font-family: "Roboto";
+      font-family: $ro;
       font-weight: 400;
       font-size: 16px;
     }
@@ -381,7 +205,7 @@ header {
   border: none;
   margin: 0 auto 40px;
   p {
-    font-family: "Roboto";
+    font-family: $ro;
     font-weight: 700;
     font-size: 18px;
     color: white;
@@ -441,7 +265,7 @@ header {
   .product-information-tabs-panel {
     display: flex;
     justify-content: center;
-    font-family: "Roboto";
+    font-family: $ro;
     font-weight: 400;
     font-size: 16px;
     text-align: center;
@@ -498,7 +322,7 @@ header {
   .item-list {
     margin-bottom: 40px;
     .item-list-txt {
-      font-family: "Roboto";
+      font-family: $ro;
       font-size: 14px;
       font-weight: 400;
       text-align: center;
@@ -657,13 +481,13 @@ header {
       }
       .modal1,
       .modal2 {
-        font-family: "Roboto";
+        font-family: $ro;
         font-weight: 700;
         font-size: 14px;
       }
       .modal3,
       .modal4 {
-        font-family: "Roboto";
+        font-family: $ro;
         font-weight: 400;
         font-size: 14px;
       }
@@ -678,7 +502,7 @@ header {
         width: 50%;
         background: white;
         border: 1px solid #000;
-        font-family: "Roboto";
+        font-family: $ro;
         font-weight: 700;
         font-size: 18px;
         margin-right: 10px;
@@ -687,7 +511,7 @@ header {
       .checkout {
         width: 50%;
         background: #000;
-        font-family: "Roboto";
+        font-family: $ro;
         font-weight: 700;
         font-size: 18px;
         a {
@@ -767,7 +591,7 @@ header {
     .shoopingbag-txt {
       text-align: center;
       margin-bottom: 10px;
-      font-family: "Roboto";
+      font-family: $ro;
     }
     .txt1 {
       font-weight: 700;
@@ -786,7 +610,7 @@ header {
       justify-content: center;
       align-items: flex-start;
       margin-bottom: 20px;
-      font-family: "Roboto";
+      font-family: $ro;
       font-weight: 700;
       font-size: 14px;
       .material-icons-outlined {
@@ -809,14 +633,14 @@ header {
       width: 50%;
       margin-right: 10px;
       background: $b;
-      font-family: "Roboto";
+      font-family: $ro;
       font-weight: 700;
       font-size: 16px;
     }
     .remove {
       width: 50%;
       background: $b;
-      font-family: "Roboto";
+      font-family: $ro;
       font-weight: 700;
       font-size: 16px;
     }
@@ -841,7 +665,7 @@ header {
   }
   .gift-wrapping-txt {
     text-align: center;
-    font-family: "Roboto";
+    font-family: $ro;
     font-weight: 400;
     font-size: 14px;
     .gift-wrapping-txt1 {
@@ -857,7 +681,7 @@ header {
   }
   .cart-total1 {
     display: flex;
-    font-family: "Roboto";
+    font-family: $ro;
     font-weight: 400;
     font-size: 16px;
     justify-content: space-between;
@@ -865,7 +689,7 @@ header {
   }
   .cart-total2 {
     display: flex;
-    font-family: "Roboto";
+    font-family: $ro;
     font-weight: 700;
     font-size: 18px;
     justify-content: space-between;
@@ -879,7 +703,7 @@ header {
     background: #000;
     .cart-button-txt {
       color: white;
-      font-family: "Roboto";
+      font-family: $ro;
       font-weight: 700;
       font-size: 20px;
     }
@@ -922,7 +746,7 @@ header {
     text-align: center;
     padding-bottom: 40px;
     > p {
-      font-family: "Roboto";
+      font-family: $ro;
       font-weight: 400;
       font-size: 14px;
     }
@@ -932,7 +756,7 @@ header {
       align-items: center;
       padding-bottom: 20px;
       > p {
-        font-family: "Roboto";
+        font-family: $ro;
         font-weight: 400;
         font-size: 14px;
       }
@@ -961,7 +785,7 @@ header {
       text-align: center;
     }
     .help-txt > p {
-      font-family: "Roboto";
+      font-family: $ro;
       font-weight: 700;
       font-size: 14px;
     }
